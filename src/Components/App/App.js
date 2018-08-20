@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { CardContainer } from '../CardContainer/CardContainer';
 import Favorites from '../Favorites/Favorites';
 import { Navbar } from '../Navbar/Navbar';
-import { Sidebar } from '../Sidebar/Sidebar';
+import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
 
 class App extends Component {
