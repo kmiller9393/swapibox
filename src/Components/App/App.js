@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import { CardContainer } from '../CardContainer/CardContainer';
+import Favorites from '../Favorites/Favorites';
+import { Navbar } from '../Navbar/Navbar';
+import { Sidebar } from '../Sidebar/Sidebar';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div class="container">
-      <div class="header">header</div>
-      <div class="navbar">navbar</div>
-      <div class="sidebar">sidebar</div>
-      <div class="card-container">Card container</div>
-      <div class="favorites">Favorites</div>
+      <div className="container">
+        <div className="header">header</div>
+        <Navbar />
+        <Sidebar />
+        <CardContainer />
+        <Favorites />
       </div>
     );
   }
