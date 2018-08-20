@@ -1,28 +1,33 @@
-.App {
-  text-align: center;
+.container {
+  display: grid;
+  max-width: 1440px;
+  height: 100vh;
+  grid-template-columns: 25% 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 120px 1fr 1fr;
+  grid-template-areas:
+      "sidebar header header header content-3"
+     "sidebar header2 header2 header2 header2"
+      "sidebar content-1 content-1 content-1 content-1"
+    "sidebar content-1 content-1 content-1 content-1";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.header {
+  grid-area: header;
+  background-color: blue;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.navbar {
+  grid-area: header2;
+  background-color: orange;
 }
-
-.App-title {
-  font-size: 1.5em;
+.sidebar {
+  grid-area: sidebar;
+  background-color: green;
 }
-
-.App-intro {
-  font-size: large;
+.card-container{
+  grid-area: content-1;
+  background-color: grey;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.favorites {
+  grid-area: content-3;
+  background-color: red;
 }
