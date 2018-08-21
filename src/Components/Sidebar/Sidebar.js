@@ -14,7 +14,6 @@ export default class Sidebar extends Component {
     fetch(`https://swapi.co/api/films/${Math.floor(Math.random() * 7) + 1}`)
       .then(response => response.json())
       .then(response => {
-        console.log(response);
         const quote = response.opening_crawl;
         const title = response.title;
         const episode = response.episode_id;

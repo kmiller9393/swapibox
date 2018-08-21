@@ -32,18 +32,14 @@
   grid-area: header2;
 }
 .sidebar {
-  background: #000;
   background-color: #17202b;
   color: #fce632;
   grid-area: sidebar;
-<<<<<<< HEAD
+  background: #000;
   height: 100%;
   margin-top: 0;
-=======
   background: #000;
->>>>>>> Add style to favorites and navbar components
   overflow: hidden;
-  width: 100%;
 }
 .card-container {
   grid-area: content-1;
@@ -85,7 +81,7 @@
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
-  animation: crawl 40s linear;
+  animation: crawl 60s linear;
 }
 
 .crawl > .title {
@@ -135,23 +131,6 @@ fieldset {
   border: none;
   padding: 2rem 7rem;
 }
-
-/* fieldset h2 {
-  font-family: 'Lobster', cursive;
-  font-weight: normal;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.12);
-  display: inline-block;
-  margin: 0;
-  line-height: 1.5;
-  position: absolute;
-  top: -20px;
-  background: url("http://www.bradysammons.com/codepen/darkui/noise.png") repeat;
-  padding: 0 5px 0 10px;
-} */
-
-/* input[type='radio'] {
-  display: none;
-} */
 
 /* -------------------
 	Default State
