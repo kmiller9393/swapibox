@@ -17,15 +17,9 @@ export default class Sidebar extends Component {
         const quote = response.opening_crawl;
         const title = response.title;
         const episode = response.episode_id;
-<<<<<<< HEAD
         const releaseDate = response.release_date;
         this.setState({ title, episode, quote, releaseDate });
       });
-=======
-        this.setState({ title, episode, quote });
-      })
-      .catch(error => console.log('error'));
->>>>>>> Add style to favorites and navbar components
   };
 
   render() {
