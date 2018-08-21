@@ -14,19 +14,12 @@ export default class Sidebar extends Component {
     fetch(`https://swapi.co/api/films/${Math.floor(Math.random() * 7) + 1}`)
       .then(response => response.json())
       .then(response => {
-        console.log(response);
         const quote = response.opening_crawl;
         const title = response.title;
         const episode = response.episode_id;
-<<<<<<< HEAD
         const releaseDate = response.release_date;
         this.setState({ title, episode, quote, releaseDate });
       });
-=======
-        this.setState({ title, episode, quote });
-      })
-      .catch(error => console.log('error'));
->>>>>>> Add style to favorites and navbar components
   };
 
   render() {
