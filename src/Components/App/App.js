@@ -5,11 +5,26 @@ import { Navbar } from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  componentDidMount = () => {
+    const peopleUrl = `https://swapi.co/api/people/`;
+    const peopleData = fetch(peopleUrl)
+      .then(response => response.json())
+      .then(data => data);
+    console.log(peopleData);
+  };
+
   render() {
     return (
       <div className="container">
-        <div className="header"><h1 className='header-title'>SwapiBox</h1></div>
+        <div className="header">
+          <h1 className="header-title">SwapiBox</h1>
+        </div>
         <Navbar />
         <Sidebar />
         <CardContainer />
@@ -18,5 +33,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
