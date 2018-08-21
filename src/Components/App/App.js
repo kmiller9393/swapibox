@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="header">header</div>
+        <div className="header"><h1 className='header-title'>SwapiBox</h1></div>
         <Navbar />
         <Sidebar />
         <CardContainer />
