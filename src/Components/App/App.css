@@ -36,6 +36,9 @@
   color: #fce632;
   grid-area: sidebar;
   background: #000;
+  height: 100%;
+  margin-top: 0;
+  background: #000;
   overflow: hidden;
 }
 .card-container {
