@@ -7,6 +7,12 @@ export default class Favorites extends Component {
   }
 
   render() {
-    return <div className="favorites">FAVORITES</div>;
+    return (
+    <div className="favorites">
+      <a class='superBtn'>Favorites
+      
+        </a>
+    </div>
+    )
   }
 }
