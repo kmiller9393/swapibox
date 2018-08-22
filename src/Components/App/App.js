@@ -3,10 +3,12 @@ import { CardContainer } from '../CardContainer/CardContainer';
 import Favorites from '../Favorites/Favorites';
 import { Navbar } from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
-import People from '../../helper';
 import './App.css';
-import { peopleDataFetcher, planetDataFetcher, vehicleDataFetcher } from '../../api-helper';
-
+import {
+  peopleDataFetcher,
+  planetDataFetcher,
+  vehicleDataFetcher
+} from '../../apiCalls';
 
 export default class App extends Component {
   constructor() {
@@ -19,12 +21,12 @@ export default class App extends Component {
   }
 
   componentDidMount = async () => {
-    const people = await peopleDataFetcher()
-    this.setState({ people })
-    const planets = await planetDataFetcher()
-    this.setState({ planets })
-    const vehicles = await vehicleDataFetcher()
-    this.setState({ vehicles })
+    const people = await peopleDataFetcher('people');
+    this.setState({ people });
+    const planets = await planetDataFetcher('planets');
+    this.setState({ planets });
+    const vehicles = await vehicleDataFetcher('vehicles');
+    this.setState({ vehicles });
   };
 
   render() {
