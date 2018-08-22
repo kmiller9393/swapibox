@@ -14,7 +14,6 @@ export const peopleDataCleaner = data => {
 
 const getResidents = async data => {
   const residents = data.residents.map(async resident => {
-    console.log(resident);
     const residentName = await fetchData(resident);
     return residentName.name;
   });

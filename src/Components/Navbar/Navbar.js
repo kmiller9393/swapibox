@@ -1,14 +1,31 @@
 import React from 'react';
 
-export const Navbar = () => {
+export const Navbar = ({ setContainerView }) => {
   return (
     <div className="navbar">
       <fieldset>
-				{/* <h2>Buttons!</h2> */}
-				<a class='glowBtn'>People</a>
-				<a class='glowBtn'>Planets</a>
-				<a class='glowBtn'>Vehicles</a>
-			</fieldset>
+        <a
+          onClick={e => setContainerView(e.target.title)}
+          class="glowBtn"
+          title="people"
+        >
+          People
+        </a>
+        <a
+          onClick={e => setContainerView(e.target.title)}
+          class="glowBtn"
+          title="planets"
+        >
+          Planets
+        </a>
+        <a
+          onClick={e => setContainerView(e.target.title)}
+          class="glowBtn"
+          title="vehicles"
+        >
+          Vehicles
+        </a>
+      </fieldset>
     </div>
-  )
+  );
 };
