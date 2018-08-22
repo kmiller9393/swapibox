@@ -1,0 +1,16 @@
+.Card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px black;
+  color: #feda4a;
+  margin: 2rem;
+  text-align: center;
+  width: 280px;
+}
+
+.card-header {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin-top: 0;
+  padding: 1rem 0 1rem 0;
+}

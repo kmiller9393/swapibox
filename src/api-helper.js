@@ -4,9 +4,9 @@ export const peopleDataCleaner = data => {
     const species = await fetchData(personData.species[0]);
     return {
       name: personData.name,
-      homeworld: homeworld.name,
-      species: species.name,
-      population: homeworld.population
+      Homeworld: homeworld.name,
+      Species: species.name,
+      Population: homeworld.population
     };
   });
   return Promise.all(PersonData);
@@ -25,10 +25,10 @@ export const planetDataCleaner = data => {
     const residents = await getResidents(data);
     return {
       name: data.name,
-      terrain: data.terrain,
-      population: data.population,
-      climate: data.climate,
-      residents
+      Terrain: data.terrain,
+      Population: data.population,
+      Climate: data.climate,
+      Residents: residents
     };
   });
   return Promise.all(PlanetData);
@@ -43,9 +43,9 @@ export const vehicleDataCleaner = data => {
   const vehicleData = data.results.map(result => {
     return {
       name: result.name,
-      modeul: result.model,
-      class: result.vehicle_class,
-      numPassengers: result.passengers
+      Model: result.model,
+      Class: result.vehicle_class,
+      'Number of Passengers': result.passengers
     };
   });
   return Promise.all(vehicleData);
