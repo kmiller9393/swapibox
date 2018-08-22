@@ -59,3 +59,35 @@ export const peopleDataFetcher = async () => {
     return data;
   }
 
+  export const vehicleDataFetcher = async () => {
+    let response = await fetch(vehiclesUrl);
+    let data = await response.json();
+    let results = await vehicleDataCleaner(data)
+    // debugger
+    // console.log(results)
+    return results;
+  }
+
+  const vehicleDataCleaner = (data) => {
+    
+    let foo =  data.results.map(result => {
+
+      
+      let results = {};
+      results.name = result.name;
+      results.model = result.model;
+      results.class = result.vehicle_class;
+      results.numPassengers = result.passengers;
+      console.log(results)
+      return results
+    })
+
+    return Promise.all(foo)
+
+  }
+
+
+//   Name
+// Model
+// Class
+// Number of Passengers
