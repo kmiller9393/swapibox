@@ -5,7 +5,7 @@ import { Navbar } from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import People from '../../helper';
 import './App.css';
-import { peopleDataFetcher, planetDataFetcher } from '../../api-helper';
+import { peopleDataFetcher, planetDataFetcher, vehicleDataFetcher } from '../../api-helper';
 
 
 export default class App extends Component {
@@ -13,7 +13,8 @@ export default class App extends Component {
     super();
     this.state = {
       people: [],
-      planets: []
+      planets: [],
+      vehicles: []
     };
   }
 
@@ -22,6 +23,8 @@ export default class App extends Component {
     this.setState({ people })
     const planets = await planetDataFetcher()
     this.setState({ planets })
+    const vehicles = await vehicleDataFetcher()
+    this.setState({ vehicles })
   };
 
   render() {
