@@ -3,20 +3,28 @@ import { CardContainer } from '../CardContainer/CardContainer';
 import Favorites from '../Favorites/Favorites';
 import { Navbar } from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
+import People from '../../helper';
 import './App.css';
+import { peopleDataFetcher, planetDataFetcher, vehicleDataFetcher } from '../../api-helper';
+
 
 export default class App extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      people: [],
+      planets: [],
+      vehicles: []
+    };
   }
 
-  componentDidMount = () => {
-    const peopleUrl = `https://swapi.co/api/people/`;
-    const peopleData = fetch(peopleUrl)
-      .then(response => response.json())
-      .then(data => data);
-    console.log(peopleData);
+  componentDidMount = async () => {
+    const people = await peopleDataFetcher()
+    this.setState({ people })
+    const planets = await planetDataFetcher()
+    this.setState({ planets })
+    const vehicles = await vehicleDataFetcher()
+    this.setState({ vehicles })
   };
 
   render() {
