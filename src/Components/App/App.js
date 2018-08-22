@@ -16,7 +16,9 @@ export default class App extends Component {
     this.state = {
       people: [],
       planets: [],
-      vehicles: []
+      vehicles: [],
+      currentView: '',
+      isLoading: false
     };
   }
 
@@ -24,15 +26,15 @@ export default class App extends Component {
     switch (endpoint) {
       case 'people':
         const people = await peopleDataFetcher('people');
-        this.setState({ people });
+        this.setState({ people, currentView: 'people' });
         break;
       case 'planets':
         const planets = await planetDataFetcher('planets');
-        this.setState({ planets });
+        this.setState({ planets, currentView: 'planets' });
         break;
       case 'vehicles':
         const vehicles = await vehicleDataFetcher('vehicles');
-        this.setState({ vehicles });
+        this.setState({ vehicles, currentView: 'vehicles' });
         break;
       default:
       //loading screen code here;
@@ -47,7 +49,9 @@ export default class App extends Component {
         </div>
         <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
-        <CardContainer />
+        {this.state.currentView && (
+          <CardContainer selectedGroup={this.state[this.state.currentView]} />
+        )}
         <Favorites />
       </div>
     );

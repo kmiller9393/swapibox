@@ -9,12 +9,11 @@
   line-height: 4rem;
   margin: 0;
   font-family: 'jedi', Fallback, sans-serif;
-  color: #fce632;  
+  color: #fce632;
 }
 
 .container {
   display: grid;
-  max-width: 1440px;
   height: 100vh;
   grid-template-columns: 25% 1fr 1fr 1fr 1fr;
   grid-template-rows: 80px 120px 1fr 1fr;
@@ -42,7 +41,9 @@
   overflow: hidden;
 }
 .card-container {
+  display: flex;
   grid-area: content-1;
+  flex-wrap: wrap;
 }
 .favorites {
   grid-area: content-3;
@@ -104,22 +105,30 @@
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @font-face {
   font-family: 'ModernPictogramsNormal';
-  src: url("http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.eot");
-  src: url("http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.woff") format("woff"), url("http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.ttf") format("truetype"), url("http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
+  src: url('http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.eot');
+  src: url('http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.woff')
+      format('woff'),
+    url('http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.ttf')
+      format('truetype'),
+    url('http://s202540075.onlinehome.us/codepen/fonts/modernpics-webfont.svg#ModernPictogramsNormal')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
 body {
   margin: 0;
   padding: 0;
-  background: url("http://www.bradysammons.com/codepen/darkui/noise.png") repeat;
+  background: url('http://www.bradysammons.com/codepen/darkui/noise.png') repeat;
 }
 
-a, input[type='radio'] + label {
+a,
+input[type='radio'] + label {
   text-align: center;
   display: inline-block;
   text-decoration: none;
@@ -135,29 +144,38 @@ fieldset {
 /* -------------------
 	Default State
 -------------------- */
-a.glowBtn, input[type='radio'] + label {
+a.glowBtn,
+input[type='radio'] + label {
   z-index: 10;
-  margin: 0 5rem;;
+  margin: 0 5rem;
   width: 115.5px;
   height: 37.29px;
   line-height: 36.3px;
   position: relative;
   font-size: 13.2px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: #0e0e0e;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   font-weight: bold;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzExMTExMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #111111), color-stop(100%, #000000));
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #111111),
+    color-stop(100%, #000000)
+  );
   background-image: -moz-linear-gradient(#111111, #000000);
   background-image: -webkit-linear-gradient(#111111, #000000);
   background-image: linear-gradient(#111111, #000000);
   border-radius: 3px;
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.3),
+    0 1px 0 rgba(255, 255, 255, 0.05), 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
-a.glowBtn:after, input[type='radio'] + label:after {
+a.glowBtn:after,
+input[type='radio'] + label:after {
   z-index: -1;
   content: '';
   cursor: pointer;
@@ -170,23 +188,35 @@ a.glowBtn:after, input[type='radio'] + label:after {
   position: absolute;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM3MzczOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #373738));
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #444444),
+    color-stop(100%, #373738)
+  );
   background-image: -moz-linear-gradient(#444444, #373738);
   background-image: -webkit-linear-gradient(#444444, #373738);
   background-image: linear-gradient(#444444, #373738);
-  box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2), inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.5),
+    0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
 }
 
 /* -------------------
 	Hover States
 -------------------- */
-a.glowBtn:hover, a.hover, input[type='radio'] + label:hover {
-  color: #AEAEAE;
+a.glowBtn:hover,
+a.hover,
+input[type='radio'] + label:hover {
+  color: #aeaeae;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 
-a.glowBtn:hover:after, a.hover:after, input[type='radio'] + label:hover:after {
+a.glowBtn:hover:after,
+a.hover:after,
+input[type='radio'] + label:hover:after {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM3MzczOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: linear-gradient(#545454, #373738);
@@ -195,21 +225,32 @@ a.glowBtn:hover:after, a.hover:after, input[type='radio'] + label:hover:after {
 /* -------------------
 	Active States
 -------------------- */
-a.glowBtn:active, a.active, a.active:hover, input[type='radio']:checked + label {
+a.glowBtn:active,
+a.active,
+a.active:hover,
+input[type='radio']:checked + label {
   color: #00ccff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 255, 255, 0.7);
-  box-shadow: 0 -1px 0 rgba(0, 193, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 20px rgba(0, 193, 255, 0.1), 0 0 30px rgba(0, 193, 255, 0.1);
+  box-shadow: 0 -1px 0 rgba(0, 193, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 1px 0 rgba(255, 255, 255, 0.05), 0 0 20px rgba(0, 193, 255, 0.1),
+    0 0 30px rgba(0, 193, 255, 0.1);
 }
 
-a.glowBtn:active, a.active, a.active:hover {
+a.glowBtn:active,
+a.active,
+a.active:hover {
   text-shadow: 0 -1px 0 black, 0 0px 30px cyan, 0 0px 50px cyan;
 }
 
-a.glowBtn:active:after, a.active:after, a.active:hover:after, input[type='radio']:checked + label:after {
+a.glowBtn:active:after,
+a.active:after,
+a.active:hover:after,
+input[type='radio']:checked + label:after {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI2MjYyNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJkMmQyZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: linear-gradient(#262627, #2d2d2e);
-  box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.3), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black;
+  box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.3),
+    inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black;
 }
 
 /* -------------------
@@ -219,7 +260,7 @@ a.superBtn {
   color: #0e0e0e;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   font-weight: bold;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
   width: 242px;
   height: 39.6px;
   line-height: 39.6px;
@@ -227,9 +268,17 @@ a.superBtn {
   border-radius: 30px;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJlMzUzNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQyNDc0OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e3537), color-stop(100%, #424748));
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #2e3537),
+    color-stop(100%, #424748)
+  );
   background-image: linear-gradient(#2e3537, #424748);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 0 0 0px 1px rgba(0, 0, 0, 0.1),
+    0 0 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 a.superBtn:after {
@@ -243,11 +292,19 @@ a.superBtn:after {
   border-radius: 30px;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJhZjFmYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE3YjJlNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2af1fc), color-stop(100%, #17b2e6));
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #2af1fc),
+    color-stop(100%, #17b2e6)
+  );
   background-image: -moz-linear-gradient(#2af1fc, #17b2e6);
   background-image: -webkit-linear-gradient(#2af1fc, #17b2e6);
   background-image: linear-gradient(#2af1fc, #17b2e6);
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4),
+    0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4),
+    inset 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
   z-index: -1;
 }
@@ -256,7 +313,7 @@ a.superBtn:after {
 	SuperBtn Hover
 -------------------- */
 a.superBtn:hover {
-  color: #AEAEAE;
+  color: #aeaeae;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzM3MzczOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -264,12 +321,16 @@ a.superBtn:hover {
 }
 
 a.superBtn:hover:after {
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4), 0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.4),
+    0 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 0px 3px rgba(0, 0, 0, 0.4),
+    inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 15px 5px rgba(0, 255, 255, 0.2);
 }
 
 a.superBtn:active {
   color: #00ccff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 30px rgba(0, 255, 255, 0.7);
   background: #333;
-  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.4), inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9), 0 0 0 black;
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.4),
+    inset 0 3px 3px rgba(0, 0, 0, 0.7), inset 0 0 4px rgba(0, 0, 0, 0.9),
+    0 0 0 black;
 }

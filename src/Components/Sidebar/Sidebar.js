@@ -5,7 +5,7 @@ export default class Sidebar extends Component {
     super();
     this.state = {
       title: '',
-      episode: null,
+      episode: '',
       quote: '',
       releaseDate: ''
     };

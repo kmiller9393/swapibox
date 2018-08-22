@@ -1,28 +1,20 @@
 import React from 'react';
 
 export const Navbar = ({ setContainerView }) => {
+  const handleClick = e => {
+    setContainerView(e.target.title);
+  };
+
   return (
     <div className="navbar">
       <fieldset>
-        <a
-          onClick={e => setContainerView(e.target.title)}
-          class="glowBtn"
-          title="people"
-        >
+        <a onClick={handleClick} class="glowBtn" title="people">
           People
         </a>
-        <a
-          onClick={e => setContainerView(e.target.title)}
-          class="glowBtn"
-          title="planets"
-        >
+        <a onClick={handleClick} class="glowBtn" title="planets">
           Planets
         </a>
-        <a
-          onClick={e => setContainerView(e.target.title)}
-          class="glowBtn"
-          title="vehicles"
-        >
+        <a onClick={handleClick} class="glowBtn" title="vehicles">
           Vehicles
         </a>
       </fieldset>
