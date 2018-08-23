@@ -37,3 +37,8 @@
 .death-star:active {
   background-image: url('images/death-star-active.png');
 }
+
+.active-favorite {
+  background-image: url('images/death-star-active.png');
+}
+
