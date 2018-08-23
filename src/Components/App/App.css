@@ -27,9 +27,11 @@
 .header {
   grid-area: header;
 }
+
 .navbar {
   grid-area: header2;
 }
+
 .sidebar {
   background-color: #17202b;
   color: #fce632;
@@ -40,12 +42,23 @@
   background: #000;
   overflow: hidden;
 }
+
 .card-container {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
   display: flex;
   grid-area: content-1;
   flex-wrap: wrap;
+  margin: 2rem;
   overflow: scroll;
 }
+
+.start {
+  align-items: center;
+  font-size: 3rem;
+  justify-content: center;
+}
+
 .favorites {
   grid-area: content-3;
   padding: 1rem;
@@ -122,6 +135,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   margin: 0;
   padding: 0;

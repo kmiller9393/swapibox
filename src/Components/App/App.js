@@ -37,7 +37,7 @@ export default class App extends Component {
         this.setState({ vehicles, currentView: 'vehicles' });
         break;
       default:
-      //loading screen code here;
+        break;
     }
   };
 
@@ -45,10 +45,13 @@ export default class App extends Component {
     return (
       <div className="container">
         <div className="header">
-          <h1 className="header-title">SwapiBox</h1>
+          <h1 className="header-title">Swapi-Box</h1>
         </div>
         <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
+        {!this.state.currentView && (
+          <div className="card-container start">Select A Category</div>
+        )}
         {this.state.currentView && (
           <CardContainer selectedGroup={this.state[this.state.currentView]} />
         )}
