@@ -11,6 +11,29 @@
 .card-header {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: flex;
   margin-top: 0;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.death-star {
+  background: rgba(0, 0, 0, 0.01);
+  background-image: url('images/death-star.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.death-star:hover {
+  background-image: url('images/death-star-hover.png');
+}
+
+.death-star:active {
+  background-image: url('images/death-star-active.png');
 }
