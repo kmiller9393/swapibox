@@ -1,12 +1,15 @@
+import numeral from 'numeral';
+
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
     const homeworld = await fetchData(personData.homeworld);
     const species = await fetchData(personData.species[0]);
+    const population = parseInt(homeworld.population).toLocaleString('en');
     return {
       name: personData.name,
       Homeworld: homeworld.name,
       Species: species.name,
-      Population: homeworld.population
+      Population: population
     };
   });
   return Promise.all(PersonData);
