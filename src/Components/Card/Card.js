@@ -6,7 +6,9 @@ export const Card = props => {
     <div className="Card">
       <h3 className="card-header">
         {props.name}
-        <button className="death-star" />
+        <button 
+        className={props.favorite ? 'death-star gtest' : 'death-star'}
+        onClick={() => props.favoriteItem(props.name)}/>
       </h3>
       <p>
         {Object.keys(props)[1]}: {Object.values(props)[1]}
