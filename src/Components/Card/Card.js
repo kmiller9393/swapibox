@@ -4,7 +4,10 @@ import './Card.css';
 export const Card = props => {
   return (
     <div className="Card">
-      <h3 className="card-header">{props.name}</h3>
+      <h3 className="card-header">
+        {props.name}
+        <button className="death-star" />
+      </h3>
       <p>
         {Object.keys(props)[1]}: {Object.values(props)[1]}
       </p>
