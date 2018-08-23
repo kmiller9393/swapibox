@@ -1,10 +1,10 @@
-import numeral from 'numeral';
+// import numeral from 'numeral';
 
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
     const homeworld = await fetchData(personData.homeworld);
     const species = await fetchData(personData.species[0]);
-    const population = parseInt(homeworld.population).toLocaleString('en');
+    const population = parseInt(homeworld.population, 10).toLocaleString('en');
     return {
       name: personData.name,
       Homeworld: homeworld.name,
