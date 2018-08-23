@@ -1,15 +1,14 @@
-import numeral from 'numeral';
 
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
     const homeworld = await fetchData(personData.homeworld);
     const species = await fetchData(personData.species[0]);
-    const population = parseInt(homeworld.population).toLocaleString('en');
+    const population = parseInt(homeworld.population, 10).toLocaleString('en');
     return {
       name: personData.name,
       Homeworld: homeworld.name,
       Species: species.name,
-      Population: population
+      Population: population,
     };
   });
   return Promise.all(PersonData);
@@ -48,7 +47,7 @@ export const vehicleDataCleaner = data => {
       name: result.name,
       Model: result.model,
       Class: result.vehicle_class,
-      'Number of Passengers': result.passengers
+      'Number of Passengers': result.passengers,
     };
   });
   return Promise.all(vehicleData);

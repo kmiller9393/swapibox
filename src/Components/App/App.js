@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CardContainer } from '../CardContainer/CardContainer';
-import Favorites from '../Favorites/Favorites';
+import { Favorites } from '../Favorites/Favorites';
 import { Navbar } from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
@@ -17,9 +17,27 @@ export default class App extends Component {
       people: [],
       planets: [],
       vehicles: [],
+      favorites: [],
       currentView: '',
       isLoading: false
     };
+  }
+
+  favoriteItem = name => {
+    const favedItem = this.state[this.state.currentView].find(item => item.name === name);
+    let newArray = this.state[this.state.currentView].map(item => {
+      item.name === name ? item.favorite = !item.favorite : undefined;
+      return item
+    }
+  )
+    this.setState({[this.state.currentView]: newArray})
+    
+    if (favedItem.favorite) {
+      this.setState({favorites: [...this.state.favorites, favedItem]})
+    } else {
+      let newArray = this.state[this.state.currentView].filter(item => item != favedItem)
+      this.setState({favorites: newArray})
+    }
   }
 
   setContainerView = async endpoint => {
@@ -35,6 +53,9 @@ export default class App extends Component {
       case 'vehicles':
         const vehicles = await vehicleDataFetcher('vehicles');
         this.setState({ vehicles, currentView: 'vehicles' });
+        break;
+      case 'favorites':
+        this.setState({ vehicles, currentView: 'favorites' });
         break;
       default:
         break;
@@ -53,9 +74,9 @@ export default class App extends Component {
           <div className="card-container start">Select A Category</div>
         )}
         {this.state.currentView && (
-          <CardContainer selectedGroup={this.state[this.state.currentView]} />
+          <CardContainer favoriteItem={this.favoriteItem} selectedGroup={this.state[this.state.currentView]} />
         )}
-        <Favorites />
+        <Favorites setContainerView={this.setContainerView}/>
       </div>
     );
   }
