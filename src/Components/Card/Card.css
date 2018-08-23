@@ -6,6 +6,7 @@
   margin: 2rem;
   text-align: center;
   width: 274px;
+  max-height: 295px;
 }
 
 .card-header {
@@ -34,11 +35,14 @@
   background-image: url('images/death-star-hover.png');
 }
 
-.death-star:active {
+.death-star-active {
+  background: rgba(0, 0, 0, 0.01);
   background-image: url('images/death-star-active.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  height: 40px;
+  width: 40px;
 }
 
-.active-favorite {
-  background-image: url('images/death-star-active.png');
-}
 
