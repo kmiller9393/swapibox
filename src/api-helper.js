@@ -1,4 +1,3 @@
-
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
     const homeworld = await fetchData(personData.homeworld);
@@ -8,7 +7,7 @@ export const peopleDataCleaner = data => {
       name: personData.name,
       Homeworld: homeworld.name,
       Species: species.name,
-      Population: population,
+      Population: population
     };
   });
   return Promise.all(PersonData);
@@ -47,7 +46,7 @@ export const vehicleDataCleaner = data => {
       name: result.name,
       Model: result.model,
       Class: result.vehicle_class,
-      'Number of Passengers': result.passengers,
+      'Number of Passengers': result.passengers
     };
   });
   return Promise.all(vehicleData);

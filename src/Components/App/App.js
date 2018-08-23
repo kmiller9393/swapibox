@@ -24,21 +24,24 @@ export default class App extends Component {
   }
 
   favoriteItem = name => {
-    const favedItem = this.state[this.state.currentView].find(item => item.name === name);
+    const favedItem = this.state[this.state.currentView].find(
+      item => item.name === name
+    );
     let newArray = this.state[this.state.currentView].map(item => {
-      item.name === name ? item.favorite = !item.favorite : undefined;
-      return item
-    }
-  )
-    this.setState({[this.state.currentView]: newArray})
-    
+      item.name === name ? (item.favorite = !item.favorite) : undefined;
+      return item;
+    });
+    this.setState({ [this.state.currentView]: newArray });
+
     if (favedItem.favorite) {
-      this.setState({favorites: [...this.state.favorites, favedItem]})
+      this.setState({ favorites: [...this.state.favorites, favedItem] });
     } else {
-      let newArray = this.state[this.state.currentView].filter(item => item != favedItem)
-      this.setState({favorites: newArray})
+      let newArray = this.state[this.state.currentView].filter(
+        item => item != favedItem
+      );
+      this.setState({ favorites: newArray });
     }
-  }
+  };
 
   setContainerView = async endpoint => {
     switch (endpoint) {
@@ -74,9 +77,15 @@ export default class App extends Component {
           <div className="card-container start">Select A Category</div>
         )}
         {this.state.currentView && (
-          <CardContainer favoriteItem={this.favoriteItem} selectedGroup={this.state[this.state.currentView]} />
+          <CardContainer
+            favoriteItem={this.favoriteItem}
+            selectedGroup={this.state[this.state.currentView]}
+          />
         )}
-        <Favorites setContainerView={this.setContainerView}/>
+        <Favorites
+          setContainerView={this.setContainerView}
+          numberOfFavorites={this.state.favorites.length}
+        />
       </div>
     );
   }
