@@ -46,19 +46,28 @@ export default class App extends Component {
   setContainerView = async endpoint => {
     switch (endpoint) {
       case 'people':
-        const people = await peopleDataFetcher('people');
-        this.setState({ people, currentView: 'people' });
+        if (!this.state.people.length) {
+          const people = await peopleDataFetcher('people');
+          this.setState({ people });
+        }
+        this.setState({ currentView: 'people' })
         break;
       case 'planets':
-        const planets = await planetDataFetcher('planets');
-        this.setState({ planets, currentView: 'planets' });
+        if (!this.state.planets.length) {
+          const planets = await planetDataFetcher('planets');
+          this.setState({ planets });
+        }
+        this.setState({ currentView: 'planets' })
         break;
       case 'vehicles':
-        const vehicles = await vehicleDataFetcher('vehicles');
-        this.setState({ vehicles, currentView: 'vehicles' });
+        if (!this.state.vehicles.length) {
+          const vehicles = await vehicleDataFetcher('vehicles');
+          this.setState({ vehicles, currentView: 'vehicles' });
+        }
+        this.setState({ currentView: 'vehicles' })
         break;
       case 'favorites':
-        this.setState({ vehicles, currentView: 'favorites' });
+        this.setState({ currentView: 'favorites' });
         break;
       default:
         break;
