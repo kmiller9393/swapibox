@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Favorites extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
+export const Favorites = ({setContainerView}) => {
 
-  render() {
-    return (
-    <div className="favorites">
-      <a class='superBtn'>Favorites
-      
-        </a>
-    </div>
-    )
-  }
+  const handleClick = e => {
+    setContainerView('favorites');
+  };
+  return (
+  <div className="favorites">
+    <a class='superBtn' onClick={handleClick}>Favorites
+    
+      </a>
+  </div>
+  )
 }
