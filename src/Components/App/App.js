@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CardContainer } from '../CardContainer/CardContainer';
 import { Favorites } from '../Favorites/Favorites';
-import { Navbar } from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
 import {
@@ -50,21 +50,21 @@ export default class App extends Component {
           const people = await peopleDataFetcher('people');
           this.setState({ people });
         }
-        this.setState({ currentView: 'people' })
+        this.setState({ currentView: 'people' });
         break;
       case 'planets':
         if (!this.state.planets.length) {
           const planets = await planetDataFetcher('planets');
           this.setState({ planets });
         }
-        this.setState({ currentView: 'planets' })
+        this.setState({ currentView: 'planets' });
         break;
       case 'vehicles':
         if (!this.state.vehicles.length) {
           const vehicles = await vehicleDataFetcher('vehicles');
           this.setState({ vehicles, currentView: 'vehicles' });
         }
-        this.setState({ currentView: 'vehicles' })
+        this.setState({ currentView: 'vehicles' });
         break;
       case 'favorites':
         this.setState({ currentView: 'favorites' });
@@ -80,11 +80,20 @@ export default class App extends Component {
         <div className="header">
           <h1 className="header-title">Swapi-Box</h1>
         </div>
-        <Navbar setContainerView={this.setContainerView} />
+        <Navbar
+          setContainerView={this.setContainerView}
+          currentView={this.state.currentView}
+        />
         <Sidebar />
         {!this.state.currentView && (
           <div className="card-container start">Select A Category</div>
         )}
+        {this.state.currentView === 'favorites' &&
+          !this.state.favorites.length && (
+            <div className="card-container-no-favs start">
+              No Favorites To Display
+            </div>
+          )}
         {this.state.currentView && (
           <CardContainer
             favoriteItem={this.favoriteItem}
