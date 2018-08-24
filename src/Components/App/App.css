@@ -53,6 +53,15 @@
   overflow: scroll;
 }
 
+.card-container-no-favs {
+  border-radius: 10px;
+  display: flex;
+  grid-area: content-1;
+  flex-wrap: wrap;
+  margin: 2rem;
+  overflow: scroll;
+}
+
 .start {
   align-items: center;
   font-size: 3rem;

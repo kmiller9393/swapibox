@@ -2,7 +2,10 @@ export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
     const homeworld = await fetchData(personData.homeworld);
     const species = await fetchData(personData.species[0]);
-    const population = parseInt(homeworld.population, 10).toLocaleString('en');
+    let population = parseInt(homeworld.population, 10).toLocaleString('en');
+    if (population == 'NaN') {
+      population = 'Unknown';
+    }
     return {
       name: personData.name,
       Homeworld: homeworld.name,
@@ -24,10 +27,14 @@ const getResidents = async data => {
 export const planetDataCleaner = data => {
   const PlanetData = data.results.map(async data => {
     const residents = await getResidents(data);
+    let population = parseInt(data.population, 10).toLocaleString('en');
+    if (population == 'NaN') {
+      population = 'Unknown';
+    }
     return {
       name: data.name,
       Terrain: data.terrain,
-      Population: data.population,
+      Population: population,
       Climate: data.climate,
       Residents: residents
     };
