@@ -1,8 +1,8 @@
 import React from 'react';
 import './Card.css';
+import PropTypes from 'prop-types';
 
 export const Card = props => {
-
 
   const itemDetails = Object.keys(props).map((item, i) => {
     if (item != 'name' && item != 'favoriteItem' && item != 'favorite') {
@@ -22,3 +22,8 @@ export const Card = props => {
     </div>
   );
 };
+
+const { array } = PropTypes
+Card.propTypes = {
+  props: array
+}

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
+
 import { CardContainer } from '../CardContainer/CardContainer';
 import { Favorites } from '../Favorites/Favorites';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
-import {
-  peopleDataFetcher,
-  planetDataFetcher,
-  vehicleDataFetcher
-} from '../../apiCalls';
+import { peopleDataFetcher, planetDataFetcher, vehicleDataFetcher } from '../../apiCalls';
 
 export default class App extends Component {
   constructor() {
@@ -24,21 +21,16 @@ export default class App extends Component {
   }
 
   favoriteItem = name => {
-    const favedItem = this.state[this.state.currentView].find(
-      item => item.name === name
-    );
+    const favedItem = this.state[this.state.currentView].find(item => item.name === name);
     let newArray = this.state[this.state.currentView].map(item => {
       item.name === name ? (item.favorite = !item.favorite) : undefined;
       return item;
     });
     this.setState({ [this.state.currentView]: newArray });
-
     if (favedItem.favorite) {
       this.setState({ favorites: [...this.state.favorites, favedItem] });
     } else {
-      let newArray = this.state[this.state.currentView].filter(
-        item => item !== favedItem
-      );
+      let newArray = this.state.favorites.filter(item => item !== favedItem);
       this.setState({ favorites: newArray });
     }
   };
@@ -82,7 +74,7 @@ export default class App extends Component {
         </div>
         <Navbar
           setContainerView={this.setContainerView}
-          currentView={this.state.currentView}
+          // currentView={this.state.currentView}
         />
         <Sidebar />
         {!this.state.currentView && (

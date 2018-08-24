@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    Class="wheeled"
+    Model="Digger Crawler"
+    Passengers="30"
+    favoriteItem={[Function]}
+    name="Sand Crawler"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="card-header"
+>
+          Sand Crawler
+          <button
+                    className="death-star"
+                    onClick={[Function]}
+          />
+</h3>,
+        Array [
+          <p>
+            Class
+            : 
+            wheeled
+</p>,
+          <p>
+            Model
+            : 
+            Digger Crawler
+</p>,
+          <p>
+            Passengers
+            : 
+            30
+</p>,
+          undefined,
+          undefined,
+        ],
+      ],
+      "className": "Card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Sand Crawler",
+            <button
+              className="death-star"
+              onClick={[Function]}
+/>,
+          ],
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sand Crawler",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "death-star",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Class",
+            ": ",
+            "wheeled",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Class",
+          ": ",
+          "wheeled",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Model",
+            ": ",
+            "Digger Crawler",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Model",
+          ": ",
+          "Digger Crawler",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Passengers",
+            ": ",
+            "30",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Passengers",
+          ": ",
+          "30",
+        ],
+        "type": "p",
+      },
+      undefined,
+      undefined,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="card-header"
+>
+            Sand Crawler
+            <button
+                        className="death-star"
+                        onClick={[Function]}
+            />
+</h3>,
+          Array [
+            <p>
+              Class
+              : 
+              wheeled
+</p>,
+            <p>
+              Model
+              : 
+              Digger Crawler
+</p>,
+            <p>
+              Passengers
+              : 
+              30
+</p>,
+            undefined,
+            undefined,
+          ],
+        ],
+        "className": "Card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sand Crawler",
+              <button
+                className="death-star"
+                onClick={[Function]}
+/>,
+            ],
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sand Crawler",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "death-star",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Class",
+              ": ",
+              "wheeled",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Class",
+            ": ",
+            "wheeled",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Model",
+              ": ",
+              "Digger Crawler",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Model",
+            ": ",
+            "Digger Crawler",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Passengers",
+              ": ",
+              "30",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Passengers",
+            ": ",
+            "30",
+          ],
+          "type": "p",
+        },
+        undefined,
+        undefined,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
