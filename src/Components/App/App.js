@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { CardContainer } from '../CardContainer/CardContainer';
 import { Favorites } from '../Favorites/Favorites';
-import { Navbar } from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
 import {
@@ -80,7 +80,10 @@ export default class App extends Component {
         <div className="header">
           <h1 className="header-title">Swapi-Box</h1>
         </div>
-        <Navbar setContainerView={this.setContainerView} />
+        <Navbar
+          setContainerView={this.setContainerView}
+          currentView={this.state.currentView}
+        />
         <Sidebar />
         {!this.state.currentView && (
           <div className="card-container start">Select A Category</div>
