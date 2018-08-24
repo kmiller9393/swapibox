@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Favorites = ({ setContainerView, numberOfFavorites }) => {
   const handleClick = e => {
@@ -14,3 +15,9 @@ export const Favorites = ({ setContainerView, numberOfFavorites }) => {
     </div>
   );
 };
+
+const { number, func } = PropTypes;
+Favorites.propTypes = {
+  setContainerView: func,
+  numberOfFavorites: number
+}
