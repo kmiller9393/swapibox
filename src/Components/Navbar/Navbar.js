@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Navbar extends Component {
   constructor() {
@@ -49,4 +50,8 @@ export default class Navbar extends Component {
       </div>
     );
   }
+}
+
+Navbar.propTypes = {
+  setContainerView: PropTypes.func
 }
