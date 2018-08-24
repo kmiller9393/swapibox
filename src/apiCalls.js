@@ -7,6 +7,12 @@ import {
 export const peopleDataFetcher = async endpoint => {
   let response = await fetch(`https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
+  // console.log(data)
+  return peopleCleaner(data)
+}
+
+const peopleCleaner = async (data) => {
+  // console.log(data);
   let results = await peopleDataCleaner(data);
   return results;
 };
