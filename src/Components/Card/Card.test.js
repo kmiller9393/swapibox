@@ -36,12 +36,8 @@ describe('Card', () => {
   })
 
   it('Should invoke the favoriteItem method when btn clicked', () => {
-    // const spy = jest.spyOn(wrapper.instance(), 'handleClick');
-    // const mockEvent = {target: { id: 'SPECIAL EDUCATION'}};
-    // wrapper.instance().forceUpdate();
     wrapper.find('.death-star').simulate('click');
     expect(mockFavoriteItem).toHaveBeenCalled();
-
   })
 
   it('should match the snapshot', () => {
