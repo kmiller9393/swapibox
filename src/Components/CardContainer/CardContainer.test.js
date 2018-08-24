@@ -19,7 +19,6 @@ describe('CardContainer', () => {
     wrapper = shallow(<CardContainer selectedGroup={mockSelectedGroup} favoriteItem={mockFavoriteItem}/>)
   })
 
-
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   })

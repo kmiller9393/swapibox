@@ -37,7 +37,7 @@ export default class App extends Component {
       this.setState({ favorites: [...this.state.favorites, favedItem] });
     } else {
       let newArray = this.state[this.state.currentView].filter(
-        item => item != favedItem
+        item => item !== favedItem
       );
       this.setState({ favorites: newArray });
     }

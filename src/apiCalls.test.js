@@ -3,10 +3,12 @@ import {
   planetDataFetcher,
   vehicleDataFetcher
 } from './apiCalls';
+// import { peopleDataCleaner } from './api-helper';
 
 describe('peopleDataFetcher method', () => {
   let mockEndpoint;
-  let mockPeopleDataCleaner;
+  let mockPeopleCleaner;
+  let mockData
 
   beforeEach(() => {
     window.fetch = jest.fn().mockImplementation(() => {
@@ -23,16 +25,21 @@ describe('peopleDataFetcher method', () => {
           ])
       });
     });
-
-    mockPeopleDataCleaner = jest.fn();
   });
 
-  it('should call fetch with the correct parameters', () => {
+  it.skip('should call fetch with the correct parameters', () => {
     mockEndpoint = 'vehicles';
+    peopleDataFetcher(mockEndpoint)
     expect(window.fetch).toHaveBeenCalledWith(
       `https://swapi.co/api/${mockEndpoint}/`
     );
   });
+  
+  it.skip('should call the peopleDataCleaner method with the correct params', () => {
+    peopleDataFetcher(mockEndpoint)
+    expect(peopleCleaner).toHaveBeenCalledWith(mockEndpoint)
+  });
 
-  it('should call the peopleDataCleaner method with the correct params', () => {});
+
 });
+
