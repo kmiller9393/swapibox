@@ -6,7 +6,7 @@ export const Card = props => {
   const itemDetails = Object.keys(props).map((item, i) => {
     if (item !== 'name' && item !== 'favoriteItem' && item !== 'favorite') {
       return (
-        <p>
+        <p key={i}>
           {Object.keys(props)[i]}: {Object.values(props)[i]}
         </p>
       );
