@@ -20,7 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <a
-        class="superBtn"
+        className="superBtn"
         onClick={[Function]}
 >
         Favorites:
@@ -44,7 +44,7 @@ ShallowWrapper {
             1
 </span>,
         ],
-        "class": "superBtn",
+        "className": "superBtn",
         "onClick": [Function],
       },
       "ref": null,
@@ -79,7 +79,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <a
-          class="superBtn"
+          className="superBtn"
           onClick={[Function]}
 >
           Favorites:
@@ -103,7 +103,7 @@ ShallowWrapper {
               1
 </span>,
           ],
-          "class": "superBtn",
+          "className": "superBtn",
           "onClick": [Function],
         },
         "ref": null,

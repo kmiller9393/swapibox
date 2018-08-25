@@ -10,16 +10,16 @@ export default class Sidebar extends Component {
       releaseDate: ''
     };
   }
-  componentDidMount = () => {
-    fetch(`https://swapi.co/api/films/${Math.floor(Math.random() * 7) + 1}`)
-      .then(response => response.json())
-      .then(response => {
-        const quote = response.opening_crawl;
-        const title = response.title;
-        const episode = response.episode_id;
-        const releaseDate = response.release_date;
-        this.setState({ title, episode, quote, releaseDate });
-      });
+
+  componentDidMount = async () => {
+    const episodeNumber = Math.floor(Math.random() * 7) + 1;
+    const result = await fetch(`https://swapi.co/api/films/${episodeNumber}`);
+    const response = await result.json();
+    const quote = response.opening_crawl;
+    const title = response.title;
+    const episode = response.episode_id;
+    const releaseDate = response.release_date;
+    this.setState({ title, episode, quote, releaseDate });
   };
 
   render() {
