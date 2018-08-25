@@ -19,8 +19,7 @@ export default class App extends Component {
       planets: [],
       vehicles: [],
       favorites: [],
-      currentView: '',
-      isLoading: false
+      currentView: ''
     };
   }
 
@@ -43,38 +42,35 @@ export default class App extends Component {
 
   setContainerView = async endpoint => {
     try {
-    switch (endpoint) {
-      case 'people':
-        if (!this.state.people.length) {
-          const people = await peopleDataFetcher('people');
-          this.setState({ people });
-        }
-        this.setState({ currentView: 'people' });
-        break;
-      case 'planets':
-        if (!this.state.planets.length) {
-          const planets = await planetDataFetcher('planets');
-          this.setState({ planets });
-        }
-        this.setState({ currentView: 'planets' });
-        break;
-      case 'vehicles':
-        if (!this.state.vehicles.length) {
-          const vehicles = await vehicleDataFetcher('vehicles');
-          this.setState({ vehicles, currentView: 'vehicles' });
-        }
-        this.setState({ currentView: 'vehicles' });
-        break;
-      case 'favorites':
-        this.setState({ currentView: 'favorites' });
-        break;
-      default:
-        break;
+      switch (endpoint) {
+        case 'people':
+          if (!this.state.people.length) {
+            const people = await peopleDataFetcher('people');
+            this.setState({ people });
+          }
+          this.setState({ currentView: 'people' });
+          break;
+        case 'planets':
+          if (!this.state.planets.length) {
+            const planets = await planetDataFetcher('planets');
+            this.setState({ planets });
+          }
+          this.setState({ currentView: 'planets' });
+          break;
+        case 'vehicles':
+          if (!this.state.vehicles.length) {
+            const vehicles = await vehicleDataFetcher('vehicles');
+            this.setState({ vehicles, currentView: 'vehicles' });
+          }
+          this.setState({ currentView: 'vehicles' });
+          break;
+        default:
+          this.setState({ currentView: 'favorites' });
+          break;
+      }
+    } catch (error) {
+      alert(error.message);
     }
-  } 
- catch(error) {
-   alert(error.message);
- }
   };
 
   render() {
@@ -83,9 +79,7 @@ export default class App extends Component {
         <div className="header">
           <h1 className="header-title">Swapi-Box</h1>
         </div>
-        <Navbar
-          setContainerView={this.setContainerView}
-        />
+        <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
         {!this.state.currentView && (
           <div className="card-container start">Select A Category</div>
