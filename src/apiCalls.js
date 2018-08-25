@@ -4,14 +4,10 @@ import {
   vehicleDataCleaner
 } from './api-helper';
 
-// import { peopleCleaner } from './services/peopleCleaner'
-
 export const peopleDataFetcher = async endpoint => {
   let response = await fetch(`https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
-  console.log(data)
   const results = peopleCleaner(data);
-  console.log(results)
   return results
 }
 
