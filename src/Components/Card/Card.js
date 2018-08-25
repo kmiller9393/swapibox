@@ -3,12 +3,15 @@ import './Card.css';
 import PropTypes from 'prop-types';
 
 export const Card = props => {
-
   const itemDetails = Object.keys(props).map((item, i) => {
     if (item !== 'name' && item !== 'favoriteItem' && item !== 'favorite') {
-      return <p>{Object.keys(props)[i]}: {Object.values(props)[i]}</p>
+      return (
+        <p>
+          {Object.keys(props)[i]}: {Object.values(props)[i]}
+        </p>
+      );
     }
-  })
+  });
 
   return (
     <div className="Card">
@@ -16,14 +19,15 @@ export const Card = props => {
         {props.name}
         <button
           className={props.favorite ? 'death-star-active' : 'death-star'}
-          onClick={() => props.favoriteItem(props.name)} />
+          onClick={() => props.favoriteItem(props.name)}
+        />
       </h3>
       {itemDetails}
     </div>
   );
 };
 
-const { array } = PropTypes
+const { array } = PropTypes;
 Card.propTypes = {
   props: array
-}
+};

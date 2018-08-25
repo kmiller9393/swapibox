@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Favorites = ({ setContainerView, numberOfFavorites }) => {
-
   return (
     <div className="favorites">
       <a className="superBtn" onClick={() => setContainerView('favorites')}>
@@ -17,4 +16,4 @@ const { number, func } = PropTypes;
 Favorites.propTypes = {
   setContainerView: func,
   numberOfFavorites: number
-}
+};
