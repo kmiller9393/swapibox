@@ -1,6 +1,5 @@
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
-
     const response = await fetch(personData.homeworld);
     const homeworld = await response.json();
 
@@ -32,11 +31,12 @@ const getResidents = async data => {
 
 export const planetDataCleaner = data => {
   const PlanetData = data.results.map(async data => {
-    const residents = await getResidents(data);
+    let residents = await getResidents(data);
     let population = parseInt(data.population, 10).toLocaleString('en');
     if (population === 'NaN') {
       population = 'Unknown';
     }
+    residents = residents.join(', ');
     return {
       name: data.name,
       Terrain: data.terrain,
