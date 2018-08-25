@@ -5,7 +5,11 @@ import { Favorites } from '../Favorites/Favorites';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './App.css';
-import { peopleDataFetcher, planetDataFetcher, vehicleDataFetcher } from '../../apiCalls';
+import {
+  peopleDataFetcher,
+  planetDataFetcher,
+  vehicleDataFetcher
+} from '../../apiCalls';
 
 export default class App extends Component {
   constructor() {
@@ -21,9 +25,11 @@ export default class App extends Component {
   }
 
   favoriteItem = name => {
-    const favedItem = this.state[this.state.currentView].find(item => item.name === name);
+    const favedItem = this.state[this.state.currentView].find(
+      item => item.name === name
+    );
     let newArray = this.state[this.state.currentView].map(item => {
-      item.name === name ? (item.favorite = !item.favorite) : undefined;
+      item.name === name ? (item.favorite = !item.favorite) : '';
       return item;
     });
     this.setState({ [this.state.currentView]: newArray });
@@ -72,10 +78,7 @@ export default class App extends Component {
         <div className="header">
           <h1 className="header-title">Swapi-Box</h1>
         </div>
-        <Navbar
-          setContainerView={this.setContainerView}
-          // currentView={this.state.currentView}
-        />
+        <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
         {!this.state.currentView && (
           <div className="card-container start">Select A Category</div>
