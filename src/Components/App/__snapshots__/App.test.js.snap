@@ -1,0 +1,786 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches the snapshot on load 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="header"
+>
+          <h1
+                    className="header-title"
+          >
+                    Swapi-Box
+          </h1>
+</div>,
+        <Navbar
+          setContainerView={[Function]}
+/>,
+        <Sidebar />,
+        <div
+          className="card-container start"
+>
+          Select A Category
+</div>,
+        false,
+        "",
+        <Unknown
+          numberOfFavorites={0}
+          setContainerView={[Function]}
+/>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1
+            className="header-title"
+>
+            Swapi-Box
+</h1>,
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Swapi-Box",
+            "className": "header-title",
+          },
+          "ref": null,
+          "rendered": "Swapi-Box",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select A Category",
+          "className": "card-container start",
+        },
+        "ref": null,
+        "rendered": "Select A Category",
+        "type": "div",
+      },
+      false,
+      "",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "numberOfFavorites": 0,
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+>
+            <h1
+                        className="header-title"
+            >
+                        Swapi-Box
+            </h1>
+</div>,
+          <Navbar
+            setContainerView={[Function]}
+/>,
+          <Sidebar />,
+          <div
+            className="card-container start"
+>
+            Select A Category
+</div>,
+          false,
+          "",
+          <Unknown
+            numberOfFavorites={0}
+            setContainerView={[Function]}
+/>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="header-title"
+>
+              Swapi-Box
+</h1>,
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Swapi-Box",
+              "className": "header-title",
+            },
+            "ref": null,
+            "rendered": "Swapi-Box",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select A Category",
+            "className": "card-container start",
+          },
+          "ref": null,
+          "rendered": "Select A Category",
+          "type": "div",
+        },
+        false,
+        "",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "numberOfFavorites": 0,
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`App matches the snapshot when the currentView has a value other than favorites 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="header"
+>
+          <h1
+                    className="header-title"
+          >
+                    Swapi-Box
+          </h1>
+</div>,
+        <Navbar
+          setContainerView={[Function]}
+/>,
+        <Sidebar />,
+        false,
+        false,
+        <Unknown
+          favoriteItem={[Function]}
+          selectedGroup={Array []}
+/>,
+        <Unknown
+          numberOfFavorites={0}
+          setContainerView={[Function]}
+/>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1
+            className="header-title"
+>
+            Swapi-Box
+</h1>,
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Swapi-Box",
+            "className": "header-title",
+          },
+          "ref": null,
+          "rendered": "Swapi-Box",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      false,
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "favoriteItem": [Function],
+          "selectedGroup": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "numberOfFavorites": 0,
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+>
+            <h1
+                        className="header-title"
+            >
+                        Swapi-Box
+            </h1>
+</div>,
+          <Navbar
+            setContainerView={[Function]}
+/>,
+          <Sidebar />,
+          false,
+          false,
+          <Unknown
+            favoriteItem={[Function]}
+            selectedGroup={Array []}
+/>,
+          <Unknown
+            numberOfFavorites={0}
+            setContainerView={[Function]}
+/>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="header-title"
+>
+              Swapi-Box
+</h1>,
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Swapi-Box",
+              "className": "header-title",
+            },
+            "ref": null,
+            "rendered": "Swapi-Box",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        false,
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "favoriteItem": [Function],
+            "selectedGroup": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "numberOfFavorites": 0,
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`App matches the snapshot when there are favorites 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="header"
+>
+          <h1
+                    className="header-title"
+          >
+                    Swapi-Box
+          </h1>
+</div>,
+        <Navbar
+          setContainerView={[Function]}
+/>,
+        <Sidebar />,
+        false,
+        <div
+          className="card-container-no-favs start"
+>
+          No Favorites To Display
+</div>,
+        <Unknown
+          favoriteItem={[Function]}
+          selectedGroup={Array []}
+/>,
+        <Unknown
+          numberOfFavorites={0}
+          setContainerView={[Function]}
+/>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1
+            className="header-title"
+>
+            Swapi-Box
+</h1>,
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Swapi-Box",
+            "className": "header-title",
+          },
+          "ref": null,
+          "rendered": "Swapi-Box",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "No Favorites To Display",
+          "className": "card-container-no-favs start",
+        },
+        "ref": null,
+        "rendered": "No Favorites To Display",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "favoriteItem": [Function],
+          "selectedGroup": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "numberOfFavorites": 0,
+          "setContainerView": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+>
+            <h1
+                        className="header-title"
+            >
+                        Swapi-Box
+            </h1>
+</div>,
+          <Navbar
+            setContainerView={[Function]}
+/>,
+          <Sidebar />,
+          false,
+          <div
+            className="card-container-no-favs start"
+>
+            No Favorites To Display
+</div>,
+          <Unknown
+            favoriteItem={[Function]}
+            selectedGroup={Array []}
+/>,
+          <Unknown
+            numberOfFavorites={0}
+            setContainerView={[Function]}
+/>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="header-title"
+>
+              Swapi-Box
+</h1>,
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Swapi-Box",
+              "className": "header-title",
+            },
+            "ref": null,
+            "rendered": "Swapi-Box",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No Favorites To Display",
+            "className": "card-container-no-favs start",
+          },
+          "ref": null,
+          "rendered": "No Favorites To Display",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "favoriteItem": [Function],
+            "selectedGroup": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "numberOfFavorites": 0,
+            "setContainerView": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
