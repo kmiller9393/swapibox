@@ -42,6 +42,7 @@ export default class App extends Component {
   };
 
   setContainerView = async endpoint => {
+    try {
     switch (endpoint) {
       case 'people':
         if (!this.state.people.length) {
@@ -70,6 +71,10 @@ export default class App extends Component {
       default:
         break;
     }
+  } 
+ catch(error) {
+   alert(error.message);
+ }
   };
 
   render() {
@@ -78,7 +83,9 @@ export default class App extends Component {
         <div className="header">
           <h1 className="header-title">Swapi-Box</h1>
         </div>
-        <Navbar setContainerView={this.setContainerView} />
+        <Navbar
+          setContainerView={this.setContainerView}
+        />
         <Sidebar />
         {!this.state.currentView && (
           <div className="card-container start">Select A Category</div>
