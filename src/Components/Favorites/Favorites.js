@@ -5,7 +5,7 @@ export const Favorites = ({ setContainerView, numberOfFavorites }) => {
 
   return (
     <div className="favorites">
-      <a class="superBtn" onClick={() => setContainerView('favorites')}>
+      <a className="superBtn" onClick={() => setContainerView('favorites')}>
         Favorites:
         <span> {numberOfFavorites}</span>
       </a>

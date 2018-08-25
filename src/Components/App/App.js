@@ -36,6 +36,7 @@ export default class App extends Component {
   };
 
   setContainerView = async endpoint => {
+    try {
     switch (endpoint) {
       case 'people':
         if (!this.state.people.length) {
@@ -64,6 +65,10 @@ export default class App extends Component {
       default:
         break;
     }
+  } 
+ catch(error) {
+   alert(error.message);
+ }
   };
 
   render() {
@@ -74,7 +79,6 @@ export default class App extends Component {
         </div>
         <Navbar
           setContainerView={this.setContainerView}
-          // currentView={this.state.currentView}
         />
         <Sidebar />
         {!this.state.currentView && (
