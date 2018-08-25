@@ -1,9 +1,15 @@
 export const peopleDataCleaner = data => {
   const PersonData = data.results.map(async personData => {
-    const homeworld = await fetchData(personData.homeworld);
-    const species = await fetchData(personData.species[0]);
+    // const homeworld = await fetchData(personData.homeworld);
+    const response = await fetch(personData.homeworld);
+    const homeworld = await response.json();
+
+    // const species = await fetchData(personData.species[0]);
+    const speciesResponse = await fetch(personData.species[0]);
+    const species = await speciesResponse.json();
+    
     let population = parseInt(homeworld.population, 10).toLocaleString('en');
-    if (population == 'NaN') {
+    if (population === 'NaN') {
       population = 'Unknown';
     }
     return {
@@ -18,7 +24,9 @@ export const peopleDataCleaner = data => {
 
 const getResidents = async data => {
   const residents = data.residents.map(async resident => {
-    const residentName = await fetchData(resident);
+    // const residentName = await fetchData(resident);
+    const response = await fetch(resident);
+    const residentName = await response.json();
     return residentName.name;
   });
   return Promise.all(residents);
@@ -28,7 +36,7 @@ export const planetDataCleaner = data => {
   const PlanetData = data.results.map(async data => {
     const residents = await getResidents(data);
     let population = parseInt(data.population, 10).toLocaleString('en');
-    if (population == 'NaN') {
+    if (population === 'NaN') {
       population = 'Unknown';
     }
     return {
