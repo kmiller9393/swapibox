@@ -87,10 +87,10 @@ export default class App extends Component {
         )}
         {currentView === 'favorites' &&
           !favorites.length && (
-            <div className="card-container-no-favs start">
+          <div className="card-container-no-favs start">
               No Favorites To Display
-            </div>
-          )}
+          </div>
+        )}
         {currentView && (
           <CardContainer
             favoriteItem={this.favoriteItem}
