@@ -14,13 +14,13 @@ describe('CardContainer', () => {
       Class: "wheeled",
       Model: "Digger Crawler",
       Passengers: "30",
-      name: "Sand Crawler"}]
+      name: "Sand Crawler"}];
     mockFavoriteItem = jest.fn();
-    wrapper = shallow(<CardContainer selectedGroup={mockSelectedGroup} favoriteItem={mockFavoriteItem}/>)
-  })
+    wrapper = shallow(<CardContainer selectedGroup={mockSelectedGroup} favoriteItem={mockFavoriteItem}/>);
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
-})
+});
