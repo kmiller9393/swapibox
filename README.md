@@ -12,7 +12,7 @@ Run npm start
 
 # SWAPI-box in action:
 
-![](./in.gif)
+![](./ezgif.com-optimize.gif)
 
 Group Members: [Ben Paige](https://github.com/benjaminpaige), [Kurt Miller](https://github.com/kmiller9393)
 
