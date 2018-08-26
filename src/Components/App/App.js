@@ -68,7 +68,7 @@ export default class App extends Component {
           this.setState({ currentView: 'vehicles', isLoading: false });
           break;
         default:
-          this.setState({ currentView: 'favorites' });
+          this.setState({ currentView: 'favorites', isLoading: false });
           break;
       }
     } catch (error) {
