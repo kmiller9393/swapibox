@@ -16,11 +16,283 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": Array [
+        <div
+          className="fade"
+/>,
+        <section
+          className="star-wars"
+>
+          <div
+                    className="crawl"
+          >
+                    <div
+                              className="title"
+                    >
+                              <p>
+                                        Episode 
+                                        6
+                              </p>
+                              <h1>
+                                        Return of the Jedi
+                              </h1>
+                    </div>
+                    <p
+                              className="quote"
+                    >
+                              Luke Skywalker has returned to
+                              his home planet of Tatooine in
+                              an attempt to rescue his
+                              friend Han Solo from the
+                              clutches of the vile gangster
+                              Jabba the Hutt.
+                              
+                              Little does Luke know that the
+                              GALACTIC EMPIRE has secretly
+                              begun construction on a new
+                              armored space station even
+                              more powerful than the first
+                              dreaded Death Star.
+                              
+                              When completed, this ultimate
+                              weapon will spell certain doom
+                              for the small band of rebels
+                              struggling to restore freedom
+                              to the galaxy...
+                    </p>
+                    <p>
+                              1983-05-25
+                    </p>
+          </div>
+</section>,
+      ],
       "className": "sidebar",
     },
     "ref": null,
-    "rendered": null,
-    "type": "p",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "fade",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="crawl"
+>
+            <div
+                        className="title"
+            >
+                        <p>
+                                    Episode 
+                                    6
+                        </p>
+                        <h1>
+                                    Return of the Jedi
+                        </h1>
+            </div>
+            <p
+                        className="quote"
+            >
+                        Luke Skywalker has returned to
+                        his home planet of Tatooine in
+                        an attempt to rescue his
+                        friend Han Solo from the
+                        clutches of the vile gangster
+                        Jabba the Hutt.
+                        
+                        Little does Luke know that the
+                        GALACTIC EMPIRE has secretly
+                        begun construction on a new
+                        armored space station even
+                        more powerful than the first
+                        dreaded Death Star.
+                        
+                        When completed, this ultimate
+                        weapon will spell certain doom
+                        for the small band of rebels
+                        struggling to restore freedom
+                        to the galaxy...
+            </p>
+            <p>
+                        1983-05-25
+            </p>
+</div>,
+          "className": "star-wars",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="title"
+>
+                <p>
+                                Episode 
+                                6
+                </p>
+                <h1>
+                                Return of the Jedi
+                </h1>
+</div>,
+              <p
+                className="quote"
+>
+                Luke Skywalker has returned to
+                his home planet of Tatooine in
+                an attempt to rescue his
+                friend Han Solo from the
+                clutches of the vile gangster
+                Jabba the Hutt.
+                
+                Little does Luke know that the
+                GALACTIC EMPIRE has secretly
+                begun construction on a new
+                armored space station even
+                more powerful than the first
+                dreaded Death Star.
+                
+                When completed, this ultimate
+                weapon will spell certain doom
+                for the small band of rebels
+                struggling to restore freedom
+                to the galaxy...
+</p>,
+              <p>
+                1983-05-25
+</p>,
+            ],
+            "className": "crawl",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Episode 
+                    6
+</p>,
+                  <h1>
+                    Return of the Jedi
+</h1>,
+                ],
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Episode ",
+                      6,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Episode ",
+                    6,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Return of the Jedi",
+                  },
+                  "ref": null,
+                  "rendered": "Return of the Jedi",
+                  "type": "h1",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                "className": "quote",
+              },
+              "ref": null,
+              "rendered": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1983-05-25",
+              },
+              "ref": null,
+              "rendered": "1983-05-25",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "section",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -28,11 +300,283 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": Array [
+          <div
+            className="fade"
+/>,
+          <section
+            className="star-wars"
+>
+            <div
+                        className="crawl"
+            >
+                        <div
+                                    className="title"
+                        >
+                                    <p>
+                                                Episode 
+                                                6
+                                    </p>
+                                    <h1>
+                                                Return of the Jedi
+                                    </h1>
+                        </div>
+                        <p
+                                    className="quote"
+                        >
+                                    Luke Skywalker has returned to
+                                    his home planet of Tatooine in
+                                    an attempt to rescue his
+                                    friend Han Solo from the
+                                    clutches of the vile gangster
+                                    Jabba the Hutt.
+                                    
+                                    Little does Luke know that the
+                                    GALACTIC EMPIRE has secretly
+                                    begun construction on a new
+                                    armored space station even
+                                    more powerful than the first
+                                    dreaded Death Star.
+                                    
+                                    When completed, this ultimate
+                                    weapon will spell certain doom
+                                    for the small band of rebels
+                                    struggling to restore freedom
+                                    to the galaxy...
+                        </p>
+                        <p>
+                                    1983-05-25
+                        </p>
+            </div>
+</section>,
+        ],
         "className": "sidebar",
       },
       "ref": null,
-      "rendered": null,
-      "type": "p",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fade",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="crawl"
+>
+              <div
+                            className="title"
+              >
+                            <p>
+                                          Episode 
+                                          6
+                            </p>
+                            <h1>
+                                          Return of the Jedi
+                            </h1>
+              </div>
+              <p
+                            className="quote"
+              >
+                            Luke Skywalker has returned to
+                            his home planet of Tatooine in
+                            an attempt to rescue his
+                            friend Han Solo from the
+                            clutches of the vile gangster
+                            Jabba the Hutt.
+                            
+                            Little does Luke know that the
+                            GALACTIC EMPIRE has secretly
+                            begun construction on a new
+                            armored space station even
+                            more powerful than the first
+                            dreaded Death Star.
+                            
+                            When completed, this ultimate
+                            weapon will spell certain doom
+                            for the small band of rebels
+                            struggling to restore freedom
+                            to the galaxy...
+              </p>
+              <p>
+                            1983-05-25
+              </p>
+</div>,
+            "className": "star-wars",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="title"
+>
+                  <p>
+                                    Episode 
+                                    6
+                  </p>
+                  <h1>
+                                    Return of the Jedi
+                  </h1>
+</div>,
+                <p
+                  className="quote"
+>
+                  Luke Skywalker has returned to
+                  his home planet of Tatooine in
+                  an attempt to rescue his
+                  friend Han Solo from the
+                  clutches of the vile gangster
+                  Jabba the Hutt.
+                  
+                  Little does Luke know that the
+                  GALACTIC EMPIRE has secretly
+                  begun construction on a new
+                  armored space station even
+                  more powerful than the first
+                  dreaded Death Star.
+                  
+                  When completed, this ultimate
+                  weapon will spell certain doom
+                  for the small band of rebels
+                  struggling to restore freedom
+                  to the galaxy...
+</p>,
+                <p>
+                  1983-05-25
+</p>,
+              ],
+              "className": "crawl",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      Episode 
+                      6
+</p>,
+                    <h1>
+                      Return of the Jedi
+</h1>,
+                  ],
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Episode ",
+                        6,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Episode ",
+                      6,
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Return of the Jedi",
+                    },
+                    "ref": null,
+                    "rendered": "Return of the Jedi",
+                    "type": "h1",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                  "className": "quote",
+                },
+                "ref": null,
+                "rendered": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1983-05-25",
+                },
+                "ref": null,
+                "rendered": "1983-05-25",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "section",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -69,11 +613,283 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": Array [
+        <div
+          className="fade"
+/>,
+        <section
+          className="star-wars"
+>
+          <div
+                    className="crawl"
+          >
+                    <div
+                              className="title"
+                    >
+                              <p>
+                                        Episode 
+                                        6
+                              </p>
+                              <h1>
+                                        Return of the Jedi
+                              </h1>
+                    </div>
+                    <p
+                              className="quote"
+                    >
+                              Luke Skywalker has returned to
+                              his home planet of Tatooine in
+                              an attempt to rescue his
+                              friend Han Solo from the
+                              clutches of the vile gangster
+                              Jabba the Hutt.
+                              
+                              Little does Luke know that the
+                              GALACTIC EMPIRE has secretly
+                              begun construction on a new
+                              armored space station even
+                              more powerful than the first
+                              dreaded Death Star.
+                              
+                              When completed, this ultimate
+                              weapon will spell certain doom
+                              for the small band of rebels
+                              struggling to restore freedom
+                              to the galaxy...
+                    </p>
+                    <p>
+                              1983-05-25
+                    </p>
+          </div>
+</section>,
+      ],
       "className": "sidebar",
     },
     "ref": null,
-    "rendered": null,
-    "type": "p",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "fade",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="crawl"
+>
+            <div
+                        className="title"
+            >
+                        <p>
+                                    Episode 
+                                    6
+                        </p>
+                        <h1>
+                                    Return of the Jedi
+                        </h1>
+            </div>
+            <p
+                        className="quote"
+            >
+                        Luke Skywalker has returned to
+                        his home planet of Tatooine in
+                        an attempt to rescue his
+                        friend Han Solo from the
+                        clutches of the vile gangster
+                        Jabba the Hutt.
+                        
+                        Little does Luke know that the
+                        GALACTIC EMPIRE has secretly
+                        begun construction on a new
+                        armored space station even
+                        more powerful than the first
+                        dreaded Death Star.
+                        
+                        When completed, this ultimate
+                        weapon will spell certain doom
+                        for the small band of rebels
+                        struggling to restore freedom
+                        to the galaxy...
+            </p>
+            <p>
+                        1983-05-25
+            </p>
+</div>,
+          "className": "star-wars",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="title"
+>
+                <p>
+                                Episode 
+                                6
+                </p>
+                <h1>
+                                Return of the Jedi
+                </h1>
+</div>,
+              <p
+                className="quote"
+>
+                Luke Skywalker has returned to
+                his home planet of Tatooine in
+                an attempt to rescue his
+                friend Han Solo from the
+                clutches of the vile gangster
+                Jabba the Hutt.
+                
+                Little does Luke know that the
+                GALACTIC EMPIRE has secretly
+                begun construction on a new
+                armored space station even
+                more powerful than the first
+                dreaded Death Star.
+                
+                When completed, this ultimate
+                weapon will spell certain doom
+                for the small band of rebels
+                struggling to restore freedom
+                to the galaxy...
+</p>,
+              <p>
+                1983-05-25
+</p>,
+            ],
+            "className": "crawl",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Episode 
+                    6
+</p>,
+                  <h1>
+                    Return of the Jedi
+</h1>,
+                ],
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Episode ",
+                      6,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Episode ",
+                    6,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Return of the Jedi",
+                  },
+                  "ref": null,
+                  "rendered": "Return of the Jedi",
+                  "type": "h1",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                "className": "quote",
+              },
+              "ref": null,
+              "rendered": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1983-05-25",
+              },
+              "ref": null,
+              "rendered": "1983-05-25",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "section",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -81,11 +897,283 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": Array [
+          <div
+            className="fade"
+/>,
+          <section
+            className="star-wars"
+>
+            <div
+                        className="crawl"
+            >
+                        <div
+                                    className="title"
+                        >
+                                    <p>
+                                                Episode 
+                                                6
+                                    </p>
+                                    <h1>
+                                                Return of the Jedi
+                                    </h1>
+                        </div>
+                        <p
+                                    className="quote"
+                        >
+                                    Luke Skywalker has returned to
+                                    his home planet of Tatooine in
+                                    an attempt to rescue his
+                                    friend Han Solo from the
+                                    clutches of the vile gangster
+                                    Jabba the Hutt.
+                                    
+                                    Little does Luke know that the
+                                    GALACTIC EMPIRE has secretly
+                                    begun construction on a new
+                                    armored space station even
+                                    more powerful than the first
+                                    dreaded Death Star.
+                                    
+                                    When completed, this ultimate
+                                    weapon will spell certain doom
+                                    for the small band of rebels
+                                    struggling to restore freedom
+                                    to the galaxy...
+                        </p>
+                        <p>
+                                    1983-05-25
+                        </p>
+            </div>
+</section>,
+        ],
         "className": "sidebar",
       },
       "ref": null,
-      "rendered": null,
-      "type": "p",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fade",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="crawl"
+>
+              <div
+                            className="title"
+              >
+                            <p>
+                                          Episode 
+                                          6
+                            </p>
+                            <h1>
+                                          Return of the Jedi
+                            </h1>
+              </div>
+              <p
+                            className="quote"
+              >
+                            Luke Skywalker has returned to
+                            his home planet of Tatooine in
+                            an attempt to rescue his
+                            friend Han Solo from the
+                            clutches of the vile gangster
+                            Jabba the Hutt.
+                            
+                            Little does Luke know that the
+                            GALACTIC EMPIRE has secretly
+                            begun construction on a new
+                            armored space station even
+                            more powerful than the first
+                            dreaded Death Star.
+                            
+                            When completed, this ultimate
+                            weapon will spell certain doom
+                            for the small band of rebels
+                            struggling to restore freedom
+                            to the galaxy...
+              </p>
+              <p>
+                            1983-05-25
+              </p>
+</div>,
+            "className": "star-wars",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="title"
+>
+                  <p>
+                                    Episode 
+                                    6
+                  </p>
+                  <h1>
+                                    Return of the Jedi
+                  </h1>
+</div>,
+                <p
+                  className="quote"
+>
+                  Luke Skywalker has returned to
+                  his home planet of Tatooine in
+                  an attempt to rescue his
+                  friend Han Solo from the
+                  clutches of the vile gangster
+                  Jabba the Hutt.
+                  
+                  Little does Luke know that the
+                  GALACTIC EMPIRE has secretly
+                  begun construction on a new
+                  armored space station even
+                  more powerful than the first
+                  dreaded Death Star.
+                  
+                  When completed, this ultimate
+                  weapon will spell certain doom
+                  for the small band of rebels
+                  struggling to restore freedom
+                  to the galaxy...
+</p>,
+                <p>
+                  1983-05-25
+</p>,
+              ],
+              "className": "crawl",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      Episode 
+                      6
+</p>,
+                    <h1>
+                      Return of the Jedi
+</h1>,
+                  ],
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Episode ",
+                        6,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Episode ",
+                      6,
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Return of the Jedi",
+                    },
+                    "ref": null,
+                    "rendered": "Return of the Jedi",
+                    "type": "h1",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                  "className": "quote",
+                },
+                "ref": null,
+                "rendered": "Luke Skywalker has returned to
+his home planet of Tatooine in
+an attempt to rescue his
+friend Han Solo from the
+clutches of the vile gangster
+Jabba the Hutt.
+
+Little does Luke know that the
+GALACTIC EMPIRE has secretly
+begun construction on a new
+armored space station even
+more powerful than the first
+dreaded Death Star.
+
+When completed, this ultimate
+weapon will spell certain doom
+for the small band of rebels
+struggling to restore freedom
+to the galaxy...",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1983-05-25",
+                },
+                "ref": null,
+                "rendered": "1983-05-25",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "section",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
