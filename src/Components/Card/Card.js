@@ -1,6 +1,6 @@
 import React from 'react';
-import './Card.css';
 import PropTypes from 'prop-types';
+import './Card.css';
 
 export const Card = props => {
   const itemDetails = Object.keys(props).map((item, i) => {
@@ -13,13 +13,15 @@ export const Card = props => {
     }
   });
 
+  const { name, favorite, favoriteItem } = props;
+
   return (
     <div className="Card">
       <h3 className="card-header">
-        {props.name}
+        {name}
         <button
-          className={props.favorite ? 'death-star-active' : 'death-star'}
-          onClick={() => props.favoriteItem(props.name)}
+          className={favorite ? 'death-star-active' : 'death-star'}
+          onClick={() => favoriteItem(name)}
         />
       </h3>
       {itemDetails}
