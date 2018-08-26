@@ -6,7 +6,8 @@
   margin: 2rem;
   text-align: center;
   width: 274px;
-  max-height: 295px; }
+  max-height: 295px;
+}
 
 .card-header {
   background: rgba(0, 0, 0, 0.4);
@@ -17,25 +18,29 @@
   margin-top: 0;
   padding: 1rem;
   justify-content: space-between;
-  text-align: left; }
+  text-align: left;
+}
 
 .death-star {
   background: rgba(0, 0, 0, 0.01);
-  background-image: url("images/death-star.png");
+  background-image: url('images/death-star.png');
   background-size: cover;
   background-position: center;
   border: none;
   height: 40px;
-  width: 40px; }
+  width: 40px;
+}
 
 .death-star:hover {
-  background-image: url("images/death-star-hover.png"); }
+  background-image: url('images/death-star-hover.png');
+}
 
 .death-star-active {
   background: rgba(0, 0, 0, 0.01);
-  background-image: url("images/death-star-active.png");
+  background-image: url('images/death-star-active.png');
   background-size: cover;
   background-position: center;
   border: none;
   height: 40px;
-  width: 40px; }
+  width: 40px;
+}
