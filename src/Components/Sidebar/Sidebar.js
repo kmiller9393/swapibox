@@ -15,7 +15,7 @@ export default class Sidebar extends Component {
     const episodeNumber = Math.floor(Math.random() * 7) + 1;
     const result = await fetch(`https://swapi.co/api/films/${episodeNumber}`);
     const response = await result.json();
-    const { opening_crawl, episode_id, release_date } = response
+    const { opening_crawl, episode_id, release_date } = response;
     const quote = opening_crawl;
     const title = response.title;
     const episode = episode_id;
