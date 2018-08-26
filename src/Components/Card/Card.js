@@ -3,11 +3,16 @@ import PropTypes from 'prop-types';
 import './Card.css';
 
 export const Card = props => {
-  const itemDetails = Object.keys(props).map((item, i) => {
-    if (item !== 'name' && item !== 'favoriteItem' && item !== 'favorite') {
+  const itemDetails = Object.keys(props).map((item, index) => {
+    if (
+      item !== 'name' &&
+      item !== 'favoriteItem' &&
+      item !== 'favorite' &&
+      Object.values(props)[index] !== ''
+    ) {
       return (
-        <p key={i}>
-          {Object.keys(props)[i]}: {Object.values(props)[i]}
+        <p key={index}>
+          {Object.keys(props)[index]}: {Object.values(props)[index]}
         </p>
       );
     }
