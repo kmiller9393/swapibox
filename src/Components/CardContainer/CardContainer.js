@@ -10,7 +10,7 @@ export const CardContainer = ({ selectedGroup, favoriteItem }) => {
   return <div className="card-container">{groupData}</div>;
 };
 
-const { array , func } = PropTypes
+const { array , func } = PropTypes;
 CardContainer.propTypes = {
   selectedGroup: array,
   favoriteItem: func
