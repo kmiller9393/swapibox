@@ -9,10 +9,10 @@ export default class Navbar extends Component {
     };
   }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState({ selected: e.target.title });
-    this.props.setContainerView(e.target.title);
+  handleClick = event => {
+    event.preventDefault();
+    this.setState({ selected: event.target.title });
+    this.props.setContainerView(event.target.title);
   };
 
   render() {
@@ -23,23 +23,17 @@ export default class Navbar extends Component {
           <a
             onClick={this.handleClick}
             className={selected === 'people' ? 'glowBtn-active' : 'glowBtn'}
-            title="people"
-          >
-            People
+            title="people">People
           </a>
           <a
             onClick={this.handleClick}
             className={selected === 'planets' ? 'glowBtn-active' : 'glowBtn'}
-            title="planets"
-          >
-            Planets
+            title="planets">Planets
           </a>
           <a
             onClick={this.handleClick}
             className={selected === 'vehicles' ? 'glowBtn-active' : 'glowBtn'}
-            title="vehicles"
-          >
-            Vehicles
+            title="vehicles">Vehicles
           </a>
         </fieldset>
       </div>
@@ -48,5 +42,5 @@ export default class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  setContainerView: PropTypes.func
+  setContainerView: PropTypes.func.isRequired
 };
