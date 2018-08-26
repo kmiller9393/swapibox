@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { CardContainer } from '../CardContainer/CardContainer';
 import { Favorites } from '../Favorites/Favorites';
 import Navbar from '../Navbar/Navbar';
