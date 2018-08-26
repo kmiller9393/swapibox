@@ -4,7 +4,12 @@ import './Card.css';
 
 export const Card = props => {
   const itemDetails = Object.keys(props).map((item, index) => {
-    if (item !== 'name' && item !== 'favoriteItem' && item !== 'favorite') {
+    if (
+      item !== 'name' &&
+      item !== 'favoriteItem' &&
+      item !== 'favorite' &&
+      Object.values(props)[index] !== ''
+    ) {
       return (
         <p key={index}>
           {Object.keys(props)[index]}: {Object.values(props)[index]}
