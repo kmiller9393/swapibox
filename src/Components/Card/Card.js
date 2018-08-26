@@ -3,23 +3,24 @@ import './Card.css';
 import PropTypes from 'prop-types';
 
 export const Card = props => {
-  const itemDetails = Object.keys(props).map((item, i) => {
+  const itemDetails = Object.keys(props).map((item, index) => {
     if (item !== 'name' && item !== 'favoriteItem' && item !== 'favorite') {
       return (
-        <p key={i}>
-          {Object.keys(props)[i]}: {Object.values(props)[i]}
+        <p key={index}>
+          {Object.keys(props)[index]}: {Object.values(props)[index]}
         </p>
       );
     }
   });
 
+  const { name, favorite, favoriteItem } = props;
   return (
     <div className="Card">
       <h3 className="card-header">
-        {props.name}
+        {name}
         <button
-          className={props.favorite ? 'death-star-active' : 'death-star'}
-          onClick={() => props.favoriteItem(props.name)}
+          className={favorite ? 'death-star-active' : 'death-star'}
+          onClick={() => favoriteItem(name)}
         />
       </h3>
       {itemDetails}
@@ -27,7 +28,10 @@ export const Card = props => {
   );
 };
 
-const { array } = PropTypes;
+const { array, string, bool, func } = PropTypes;
 Card.propTypes = {
-  props: array
+  props: array.isRequired,
+  name: string.isRequired,
+  favorite: bool,
+  favoriteItem: func.isRequired
 };
