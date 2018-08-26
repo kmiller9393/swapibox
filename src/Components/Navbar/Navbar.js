@@ -9,42 +9,31 @@ export default class Navbar extends Component {
     };
   }
 
-  handleClick = e => {
-    e.preventDefault();
-    this.setState({ selected: e.target.title });
-    this.props.setContainerView(e.target.title);
+  handleClick = event => {
+    event.preventDefault();
+    this.setState({ selected: event.target.title });
+    this.props.setContainerView(event.target.title);
   };
 
   render() {
+    const { selected } = this.state;
     return (
       <div className="navbar">
         <fieldset>
           <a
             onClick={this.handleClick}
-            className={
-              this.state.selected === 'people' ? 'glowBtn-active' : 'glowBtn'
-            }
-            title="people"
-          >
-            People
+            className={selected === 'people' ? 'glowBtn-active' : 'glowBtn'}
+            title="people">People
           </a>
           <a
             onClick={this.handleClick}
-            className={
-              this.state.selected === 'planets' ? 'glowBtn-active' : 'glowBtn'
-            }
-            title="planets"
-          >
-            Planets
+            className={selected === 'planets' ? 'glowBtn-active' : 'glowBtn'}
+            title="planets">Planets
           </a>
           <a
             onClick={this.handleClick}
-            className={
-              this.state.selected === 'vehicles' ? 'glowBtn-active' : 'glowBtn'
-            }
-            title="vehicles"
-          >
-            Vehicles
+            className={selected === 'vehicles' ? 'glowBtn-active' : 'glowBtn'}
+            title="vehicles">Vehicles
           </a>
         </fieldset>
       </div>
@@ -53,5 +42,5 @@ export default class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  setContainerView: PropTypes.func
-}
+  setContainerView: PropTypes.func.isRequired
+};
