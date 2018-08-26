@@ -24,41 +24,41 @@ export default class App extends Component {
   }
 
   favoriteItem = name => {
-    const favedItem = this.state[this.state.currentView].find(
-      item => item.name === name
-    );
-    let newArray = this.state[this.state.currentView].map(item => {
+    const { currentView, favorites } = this.state;
+    const favedItem = this.state[currentView].find(item => item.name === name);
+    let newArray = this.state[currentView].map(item => {
       item.name === name ? (item.favorite = !item.favorite) : '';
       return item;
     });
-    this.setState({ [this.state.currentView]: newArray });
+    this.setState({ [currentView]: newArray });
     if (favedItem.favorite) {
-      this.setState({ favorites: [...this.state.favorites, favedItem] });
+      this.setState({ favorites: [...favorites, favedItem] });
     } else {
-      let newArray = this.state.favorites.filter(item => item !== favedItem);
+      let newArray = favorites.filter(item => item !== favedItem);
       this.setState({ favorites: newArray });
     }
   };
 
   setContainerView = async endpoint => {
+    const { people, planets, vehicles } = this.state;
     try {
       switch (endpoint) {
         case 'people':
-          if (!this.state.people.length) {
+          if (!people.length) {
             const people = await peopleDataFetcher('people');
             this.setState({ people });
           }
           this.setState({ currentView: 'people' });
           break;
         case 'planets':
-          if (!this.state.planets.length) {
+          if (!planets.length) {
             const planets = await planetDataFetcher('planets');
             this.setState({ planets });
           }
           this.setState({ currentView: 'planets' });
           break;
         case 'vehicles':
-          if (!this.state.vehicles.length) {
+          if (!vehicles.length) {
             const vehicles = await vehicleDataFetcher('vehicles');
             this.setState({ vehicles, currentView: 'vehicles' });
           }
@@ -74,6 +74,7 @@ export default class App extends Component {
   };
 
   render() {
+    const { currentView, favorites } = this.state;
     return (
       <div className="container">
         <div className="header">
@@ -81,24 +82,24 @@ export default class App extends Component {
         </div>
         <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
-        {!this.state.currentView && (
+        {!currentView && (
           <div className="card-container start">Select A Category</div>
         )}
-        {this.state.currentView === 'favorites' &&
-          !this.state.favorites.length && (
+        {currentView === 'favorites' &&
+          !favorites.length && (
             <div className="card-container-no-favs start">
               No Favorites To Display
             </div>
           )}
-        {this.state.currentView && (
+        {currentView && (
           <CardContainer
             favoriteItem={this.favoriteItem}
-            selectedGroup={this.state[this.state.currentView]}
+            selectedGroup={this.state[currentView]}
           />
         )}
         <Favorites
           setContainerView={this.setContainerView}
-          numberOfFavorites={this.state.favorites.length}
+          numberOfFavorites={favorites.length}
         />
       </div>
     );

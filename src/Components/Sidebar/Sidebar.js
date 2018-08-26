@@ -23,18 +23,19 @@ export default class Sidebar extends Component {
   };
 
   render() {
-    if (!this.state.quote) return <p className="sidebar" />;
+    const { quote, episode, title, releaseDate } = this.state;
+    if (!quote) return <p className="sidebar" />;
     return (
       <div className="sidebar">
         <div className="fade" />
         <section className="star-wars">
           <div className="crawl">
             <div className="title">
-              <p>Episode {this.state.episode}</p>
-              <h1>{this.state.title}</h1>
+              <p>Episode {episode}</p>
+              <h1>{title}</h1>
             </div>
-            <p className="quote">{this.state.quote}</p>
-            <p>{this.state.releaseDate}</p>
+            <p className="quote">{quote}</p>
+            <p>{releaseDate}</p>
           </div>
         </section>
       </div>
