@@ -1,6 +1,6 @@
 import React from 'react';
-import './Card.css';
 import PropTypes from 'prop-types';
+import './Card.css';
 
 export const Card = props => {
   const itemDetails = Object.keys(props).map((item, index) => {

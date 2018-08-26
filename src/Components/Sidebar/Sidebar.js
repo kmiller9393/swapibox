@@ -24,7 +24,7 @@ export default class Sidebar extends Component {
   };
 
   render() {
-    const { quote, episode, title, releaseDate } = this.state
+    const { quote, episode, title, releaseDate } = this.state;
     if (!quote) return <p className="sidebar" />;
     return (
       <div className="sidebar">
