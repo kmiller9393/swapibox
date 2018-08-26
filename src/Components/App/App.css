@@ -62,6 +62,12 @@
   overflow: scroll;
 }
 
+.loading-screen {
+  background-image: url('https://media.giphy.com/media/3ornjSL2sBcPflIDiU/giphy.gif');
+  background-size: cover;
+  background-position: center;
+}
+
 .start {
   align-items: center;
   font-size: 3rem;
