@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-
 import { Card } from './Card';
 
 describe('Card', () => {
@@ -13,11 +12,14 @@ describe('Card', () => {
     mockIndex = 1;
     mockFavoriteItem = jest.fn();
     mockItem = {
-      Class: "wheeled",
-      Model: "Digger Crawler",
-      Passengers: "30",
-      name: "Sand Crawler"};
-    wrapper = shallow(<Card {...mockItem} favoriteItem={mockFavoriteItem} key={mockIndex} />);
+      Class: 'wheeled',
+      Model: 'Digger Crawler',
+      Passengers: '30',
+      name: 'Sand Crawler'
+    };
+    wrapper = shallow(
+      <Card {...mockItem} favoriteItem={mockFavoriteItem} key={mockIndex} />
+    );
   });
 
   it('should start with a death-star class', () => {
@@ -26,12 +28,15 @@ describe('Card', () => {
 
   it('if has property of favorite it should have class of death-star-active', () => {
     mockItem = {
-      Class: "wheeled",
-      Model: "Digger Crawler",
-      Passengers: "30",
-      name: "Sand Crawler",
-      favorite: true};
-    wrapper = shallow(<Card {...mockItem} favoriteItem={mockFavoriteItem} key={mockIndex} />);
+      Class: 'wheeled',
+      Model: 'Digger Crawler',
+      Passengers: '30',
+      name: 'Sand Crawler',
+      favorite: true
+    };
+    wrapper = shallow(
+      <Card {...mockItem} favoriteItem={mockFavoriteItem} key={mockIndex} />
+    );
     expect(wrapper.find('button').hasClass('death-star-active')).toEqual(true);
   });
 
@@ -43,5 +48,4 @@ describe('Card', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });

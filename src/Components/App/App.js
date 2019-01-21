@@ -86,24 +86,20 @@ export default class App extends Component {
         </div>
         <Navbar setContainerView={this.setContainerView} />
         <Sidebar />
-        {!isLoading &&
-          !currentView && (
-            <div className="card-container start">Select A Category</div>
-          )}
-        {!isLoading &&
-          currentView === 'favorites' &&
-          !favorites.length && (
-            <div className="card-container-no-favs start">
-              No Favorites To Display
-            </div>
-          )}
-        {!isLoading &&
-          currentView && (
-            <CardContainer
-              favoriteItem={this.favoriteItem}
-              selectedGroup={this.state[currentView]}
-            />
-          )}
+        {!isLoading && !currentView && (
+          <div className="card-container start">Select A Category</div>
+        )}
+        {!isLoading && currentView === 'favorites' && !favorites.length && (
+          <div className="card-container-no-favs start">
+            No Favorites To Display
+          </div>
+        )}
+        {!isLoading && currentView && (
+          <CardContainer
+            favoriteItem={this.favoriteItem}
+            selectedGroup={this.state[currentView]}
+          />
+        )}
         {isLoading && <LoadingScreen />}
         <Favorites
           setContainerView={this.setContainerView}

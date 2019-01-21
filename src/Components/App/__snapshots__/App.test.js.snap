@@ -37,6 +37,7 @@ ShallowWrapper {
 </div>,
         false,
         "",
+        false,
         <Unknown
           numberOfFavorites={0}
           setContainerView={[Function]}
@@ -107,6 +108,7 @@ ShallowWrapper {
       },
       false,
       "",
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -149,6 +151,7 @@ ShallowWrapper {
 </div>,
           false,
           "",
+          false,
           <Unknown
             numberOfFavorites={0}
             setContainerView={[Function]}
@@ -219,6 +222,7 @@ ShallowWrapper {
         },
         false,
         "",
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -289,6 +293,7 @@ ShallowWrapper {
           favoriteItem={[Function]}
           selectedGroup={Array []}
 />,
+        false,
         <Unknown
           numberOfFavorites={0}
           setContainerView={[Function]}
@@ -359,6 +364,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -400,6 +406,7 @@ ShallowWrapper {
             favoriteItem={[Function]}
             selectedGroup={Array []}
 />,
+          false,
           <Unknown
             numberOfFavorites={0}
             setContainerView={[Function]}
@@ -470,6 +477,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -544,6 +552,7 @@ ShallowWrapper {
           favoriteItem={[Function]}
           selectedGroup={Array []}
 />,
+        false,
         <Unknown
           numberOfFavorites={0}
           setContainerView={[Function]}
@@ -625,6 +634,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -670,6 +680,7 @@ ShallowWrapper {
             favoriteItem={[Function]}
             selectedGroup={Array []}
 />,
+          false,
           <Unknown
             numberOfFavorites={0}
             setContainerView={[Function]}
@@ -751,6 +762,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,

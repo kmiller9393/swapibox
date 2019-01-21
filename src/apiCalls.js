@@ -1,14 +1,13 @@
-import { peopleDataCleaner, planetDataCleaner, vehicleDataCleaner } from './api-helper';
+import {
+  peopleDataCleaner,
+  planetDataCleaner,
+  vehicleDataCleaner
+} from './api-helper';
 
 export const peopleDataFetcher = async endpoint => {
   let response = await fetch(`https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
-  const results = peopleCleaner(data);
-  return results;
-};
-
-const peopleCleaner = async data => {
-  let results = await peopleDataCleaner(data);
+  const results = peopleDataCleaner(data);
   return results;
 };
 

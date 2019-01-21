@@ -616,82 +616,71 @@ export const mockAppPlanets = [
   {
     Climate: 'temperate',
     Population: '2,000,000,000',
-    Residents: ['Leia Organa', 'Bail Prestor Organa', 'Raymus Antilles'],
+    Residents: 'Leia Organa, Bail Prestor Organa, Raymus Antilles',
     Terrain: 'grasslands, mountains',
     name: 'Alderaan'
   },
   {
     Climate: 'temperate, tropical',
     Population: '1,000',
-    Residents: [],
+    Residents: '',
     Terrain: 'jungle, rainforests',
     name: 'Yavin IV'
   },
   {
     Climate: 'frozen',
     Population: 'Unknown',
-    Residents: [],
-    Terrain: 'tundra, ice caves, mountain ranges',
+    Residents: '',
+    Terrain: 'tundra, ice caves,mountain ranges',
     name: 'Hoth'
   },
   {
     Climate: 'murky',
     Population: 'Unknown',
-    Residents: [],
+    Residents: '',
     Terrain: 'swamp, jungles',
     name: 'Dagobah'
   },
   {
     Climate: 'temperate',
     Population: '6,000,000',
-    Residents: ['Lobot'],
+    Residents: 'Lobot',
     Terrain: 'gas giant',
     name: 'Bespin'
   },
   {
     Climate: 'temperate',
     Population: '30,000,000',
-    Residents: ['Wicket Systri Warrick'],
+    Residents: 'Wicket Systri Warrick',
     Terrain: 'forests, mountains, lakes',
     name: 'Endor'
   },
   {
     Climate: 'temperate',
     Population: '4,500,000,000',
-    Residents: [
-      'R2-D2',
-      'Palpatine',
-      'Jar Jar Binks',
-      'Roos Tarpals',
-      'Rugor Nass',
-      'Ric Olié',
-      'Quarsh Panaka',
-      'Gregar Typho',
-      'Cordé',
-      'Dormé',
-      'Padmé Amidala'
-    ],
+    Residents:
+      'R2-D2, Palpatine, Jar Jar Binks, Roos Tarpals, Rugor Nass, Ric Olié, Quarsh Panaka, Gregar Typho, Cordé, Dormé, Padmé Amidala',
     Terrain: 'grassy hills, swamps, forests, mountains',
     name: 'Naboo'
   },
   {
     Climate: 'temperate',
     Population: '1,000,000,000,000',
-    Residents: ['Finis Valorum', 'Adi Gallia', 'Jocasta Nu'],
+    Residents: 'Finis Valorum, Adi Gallia, Jocasta Nu',
     Terrain: 'cityscape, mountains',
     name: 'Coruscant'
   },
   {
     Climate: 'temperate',
     Population: '1,000,000,000',
-    Residents: ['Boba Fett', 'Lama Su', 'Taun We'],
+    Residents: 'Boba Fett, Lama Su, Taun We',
     Terrain: 'ocean',
     name: 'Kamino'
   },
   {
     Climate: 'temperate, arid',
     Population: '100,000,000,000',
-    Residents: ['Poggle the Lesser'],
+    Residents: 'Poggle the Lesser',
     Terrain: 'rock, desert, mountain, barren',
     name: 'Geonosis'
   }
