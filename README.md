@@ -16,6 +16,10 @@ SWAPI-Box is an application that uses the Star Wars API (SWAPI) to display infor
 
 # SWAPI-box in action:
 
-![](./swapibox-video.gif)
+![](./src/images/ezgif.com-optimize.gif)
+
+# HomePage
+
+<img src="./src/images/homepage.svg" alt="homepage">
 
 Group Members: [Ben Paige](https://github.com/benjaminpaige), [Kurt Miller](https://github.com/kmiller9393)
