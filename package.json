@@ -17,10 +17,12 @@
     "eject": "react-scripts eject",
     "eslint": "./node_modules/eslint/bin/eslint.js ./src/*.js",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "devDependencies": {
     "enzyme": "^3.4.4",
     "enzyme-adapter-react-16": "^1.2.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
