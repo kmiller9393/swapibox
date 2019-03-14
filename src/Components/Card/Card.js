@@ -19,6 +19,7 @@ export const Card = props => {
   });
 
   const { name, favorite, favoriteItem } = props;
+
   return (
     <div className="Card">
       <h3 className="card-header">
