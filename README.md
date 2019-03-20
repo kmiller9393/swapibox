@@ -14,10 +14,6 @@ SWAPI-Box is an application that uses the Star Wars API (SWAPI) to display infor
 
 4. Run `npm start`.
 
-# SWAPI-box in action:
-
-![](./src/images/ezgif.com-optimize.gif)
-
 # HomePage
 
 <img src="./src/images/homepage.svg" alt="homepage">
