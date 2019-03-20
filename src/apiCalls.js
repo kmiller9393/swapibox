@@ -5,14 +5,14 @@ import {
 } from './api-helper';
 
 export const peopleDataFetcher = async endpoint => {
-  let response = await fetch(`https://swapi.co/api/${endpoint}/`);
+  let response = await fetch(`https://cors-anywhere.herokuapp.com/https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
   const results = peopleDataCleaner(data);
   return results;
 };
 
 export const planetDataFetcher = async endpoint => {
-  let response = await fetch(`https://swapi.co/api/${endpoint}/`);
+  let response = await fetch(`https://cors-anywhere.herokuapp.com/https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
   return planetCleaner(data);
 };
@@ -23,7 +23,7 @@ const planetCleaner = async data => {
 };
 
 export const vehicleDataFetcher = async endpoint => {
-  let response = await fetch(`https://swapi.co/api/${endpoint}/`);
+  let response = await fetch(`https://cors-anywhere.herokuapp.com/https://swapi.co/api/${endpoint}/`);
   let data = await response.json();
   return vehicleCleaner(data);
 };
